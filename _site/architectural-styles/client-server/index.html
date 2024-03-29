@@ -1,0 +1,164 @@
+<!-- _includes/navbar.md -->
+
+<style>
+  .navbar {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: center; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  .navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from navbar links */
+    padding: 10px 20px; /* Padding around navbar links */
+    margin: 0 5px; /* Add margin to navbar links */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    position: relative; /* Positioning context for the line */
+    font-size: 14.5px;
+  }
+  .navbar1 {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: left; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  .navbar a:not(:last-child):after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position the line absolutely */
+    top: 50%; /* Align the line vertically */
+    right: 0; /* Position the line to the right */
+    transform: translateY(-50%); /* Center the line vertically */
+    width: 1px; /* Line width */
+    height: 80%; /* Line height */
+    background-color: #fff; /* Line color */
+  }
+
+  .navbar a:hover {
+    background-color: #2980b9; /* Background color on hover */
+  }
+</style>
+
+<div class="navbar">
+<div class="navbar1">
+<a href="/">&nbsp;&nbsp;Home</a>
+</div>
+  <div>
+  <a href="/architectural-styles">Architectural Styles</a>
+  <a href="/cloud-native-attributes">Cloud Native Attributes</a>
+  <a href="/design-principles">Design Principles</a>
+  <a href="/design-patterns">Design Patterns</a>
+  <a href="/security-design-patterns">Security Patterns</a>
+  <a href="/architectural-patterns">Architectural Patterns</a>
+  </div>
+</div>
+
+<style>
+  /* CSS styles from the original provided code */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+     padding-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: auto;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+  ul {
+    padding-left: 20px;
+    color: #555;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  /* Additional CSS for improvements */
+  .benefits ul,
+  .how-to-adopt ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+</style>
+
+<div class="container">
+  <h1>Client/server architecture overview</h1>
+  
+  <img src="/pictures/Client-Server.png" alt="Monolithic Architecture" />
+  
+  <p>In Client/server architecture tasks are divided between clients and servers in a networked environment. It is widely used in applications such as web browsing, email, file sharing, and more. Client is a user's device or software application that initiates requests for services or resources from the server. It is responsible for presenting information to users, interacting with them, and sending requests to servers. Server provides services or resources to clients by handling incoming requests, process data, perform computations, and manage resources. It stores and manages databases, files, and other resources that clients may need.</p>
+
+  <div class="benefits">
+    <h2>Benefits</h2>
+    <ul>
+      <li>Resource Efficiency: By distributing tasks between clients and servers, resource-intensive computations and data processing can be offloaded to powerful server systems. This frees up clients to focus on user interactions and presentation, resulting in optimized resource utilization.</li>
+      <li>Data Security and Integrity: Servers can implement robust security measures, firewalls, encryption, and access controls to protect sensitive data and ensure its integrity. This centralized approach helps maintain consistent security practices across the system.</li>
+      <li>Interoperability: Different types of clients (desktop, mobile, web) can access the same services provided by the server, promoting cross-platform compatibility and enabling a wider user base to access the application.</li>
+      <li>Load Balancing: Load balancers can be employed to distribute incoming requests across multiple servers, ensuring even distribution of workloads and preventing any single server from being overwhelmed.</li>
+    </ul>
+  </div>
+
+  <div class="how-to-adopt">
+    <h2>How to Adopt</h2>
+    <ul>
+      <li>Identify Static Content: Identify all the static content files that your website or application uses. This includes images, stylesheets, JavaScript files, fonts, videos, and other assets that do not change dynamically.</li>
+      <li>Select a Hosting Solution: Choose a static content hosting solution that suits your needs. Common options include content delivery networks (CDNs), cloud storage services, or dedicated static content hosting providers.</li>
+      <li>Configure Your Hosting Service: Set up and configure your chosen hosting service. This may involve creating an account, configuring security settings, and defining storage containers or buckets for your static content.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- _includes/footer.md -->
+
+<style>
+  .footer {
+    padding-top: 40px;
+    background-color: lightblue; /* Light background color */
+    padding: 20px 0; /* Padding around footer content */
+    text-align: center; /* Center align footer content */
+    font-size: 14px; /* Set font size */
+    color: #333; /* Text color */
+  }
+</style>
+
+<div class="footer">
+  <p>Copyright &copy; 2024 Company. All rights reserved.</p>
+  <p>Contact: info@company.com | Phone: 123-456-7890</p>
+  <p>Follow us on <a href="https://twitter.com/yourcompany">Twitter</a> | <a href="https://www.facebook.com/yourcompany">Facebook</a></p>
+</div>

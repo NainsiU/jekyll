@@ -1,0 +1,163 @@
+<!-- _includes/navbar.md -->
+
+<style>
+  .navbar {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: center; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  .navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from navbar links */
+    padding: 10px 20px; /* Padding around navbar links */
+    margin: 0 5px; /* Add margin to navbar links */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    position: relative; /* Positioning context for the line */
+    font-size: 14.5px;
+  }
+  .navbar1 {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: left; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  .navbar a:not(:last-child):after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position the line absolutely */
+    top: 50%; /* Align the line vertically */
+    right: 0; /* Position the line to the right */
+    transform: translateY(-50%); /* Center the line vertically */
+    width: 1px; /* Line width */
+    height: 80%; /* Line height */
+    background-color: #fff; /* Line color */
+  }
+
+  .navbar a:hover {
+    background-color: #2980b9; /* Background color on hover */
+  }
+</style>
+
+<div class="navbar">
+<div class="navbar1">
+<a href="/">&nbsp;&nbsp;Home</a>
+</div>
+  <div>
+  <a href="/architectural-styles">Architectural Styles</a>
+  <a href="/cloud-native-attributes">Cloud Native Attributes</a>
+  <a href="/design-principles">Design Principles</a>
+  <a href="/design-patterns">Design Patterns</a>
+  <a href="/security-design-patterns">Security Patterns</a>
+  <a href="/architectural-patterns">Architectural Patterns</a>
+  </div>
+</div>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #555;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .benefits {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .how-to-adopt {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  </style>
+
+<div class="container">
+  <h1>Component-Based Architecture</h1>
+  <img src="/pictures/component-based.png" alt="Component-Based Architecture" />
+  
+  <p>Component-Based Architecture is to promote reusability, modularity, and maintainability of software. Components are designed to have clear interfaces, making it easier to interact with and integrate them within the system. This approach allows developers to focus on developing individual components with well-defined responsibilities, without needing to worry about the entire system's intricacies.</p>
+
+  <div class="benefits">
+    <h2>Benefits</h2>
+    <ul>
+      <li>Reusability and Faster Development: Components are designed to be self-contained and reusable. This significantly speeds up development time by allowing developers to focus on assembling and configuring existing components rather than starting from scratch.</li>
+      <li>Modularity and Maintainability: Components are isolated units with clear interfaces and well-defined responsibilities. This modularity makes the system easier to understand and maintain.</li>
+      <li>Collaboration and Parallel Development: Since components are independent and have standardized interfaces, development teams can work on different components simultaneously.</li>
+      <li>Reduced Development Costs: By reusing existing components, developers can reduce the amount of code they need to write from scratch. This can lead to lower development costs and faster time-to-market for new software projects.</li>
+    </ul>
+  </div>
+
+  <div class="how-to-adopt">
+    <h2>How to adapt</h2>
+    <ul>
+      <li>Separate Concerns: Once you've identified the business logic, separate it from other aspects of your application, such as user interface code, database access, and external dependencies. This separation allows for better organization and easier maintenance.</li>
+      <li>Use Design Patterns: Employ design patterns like MVC (Model-View-Controller), MVP (Model-View-Presenter), or MVVM (Model-View-ViewModel) to separate the presentation layer from the business logic layer. These patterns help to clearly delineate responsibilities and make the codebase more modular.</li>
+      <li>Create Business Layer: Establish a dedicated business logic layer within your application. This layer should encapsulate all the business rules and processes. It should be independent of any specific user interface or data access mechanisms.</li>
+      <li>Encapsulation: Encapsulate the business logic within classes or modules. This encapsulation helps in isolating changes to the logic and prevents unintended modifications from affecting other parts of the system.</li>
+      <li>Dependency Injection: Use dependency injection to inject dependencies into your business logic components rather than hard-coding them. This promotes loose coupling and makes it easier to replace or mock dependencies for testing purposes.</li>
+      <li>Unit Testing: Write unit tests for your business logic components to ensure they behave as expected. By isolating the business logic, you can write focused tests that verify its correctness independently of other parts of the system.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- _includes/footer.md -->
+
+<style>
+  .footer {
+    padding-top: 40px;
+    background-color: lightblue; /* Light background color */
+    padding: 20px 0; /* Padding around footer content */
+    text-align: center; /* Center align footer content */
+    font-size: 14px; /* Set font size */
+    color: #333; /* Text color */
+  }
+</style>
+
+<div class="footer">
+  <p>Copyright &copy; 2024 Company. All rights reserved.</p>
+  <p>Contact: info@company.com | Phone: 123-456-7890</p>
+  <p>Follow us on <a href="https://twitter.com/yourcompany">Twitter</a> | <a href="https://www.facebook.com/yourcompany">Facebook</a></p>
+</div>
+

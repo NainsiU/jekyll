@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <style>
+        /* Your CSS styles */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .button a {
+            text-decoration: none;
+        }
+
+        .button {
+            margin: 10px;
+            text-align: center;
+            border: 4px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .button img {
+            width: 150px; /* Adjust as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .button h3 {
+            margin-top: 10px;
+        }
+
+        .box {
+            border: 3px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px; /* Adjust as needed */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px; /* Increase font size */
+            text-align: left; /* Center align the text */
+            margin-top: 40px; /* Add some top margin */
+        }
+    </style>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+    {% include navbar.md %}
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;{{ page.title }}</h1>
+    {{ content }}
+    {% include footer.md %}
+</body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Monolithic Architecture</title>
+    <title>Event Driven</title>
 </head>
 <style>
     /* body {
@@ -178,43 +178,38 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Monolithic.png" alt="Monolithic Architecture" /></p>
+        <p><img src="../../pictures/Event%20Driven-Icon.jpg" alt="Event Driven" /></p>
 
-<p>A monolithic architecture is a traditional software design approach where an entire application is built as a single, tightly integrated unit.
-In a monolithic architecture, all components and modules of the application are combined into a single codebase, and they share the same runtime environment and database.</p>
+<p>This pattern focuses on the flow of events, messages, and notifications between different components or services in a system. In an event-driven system, components react to events by processing the associated information and taking appropriate actions. This architecture is particularly useful for building scalable, loosely-coupled, and responsive systems.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Simplicity:</strong> Monolithic architectures are often simpler to develop and deploy, making them suitable for small to moderately complex applications.</li>
-  <li><strong>Ease of Testing:</strong> Testing is simpler because all components are closely integrated.</li>
-  <li><strong>Development Velocity:</strong> Developers can make changes across the application quickly since they are working within a single codebase.</li>
-  <li><strong>Lower Latency:</strong> Intra-application communication within the same runtime environment is often faster compared to inter-service communication in a microservices architecture.</li>
+  <li><strong>Loose Coupling:</strong> This enhances flexibility and allows for changes to individual components without affecting the entire system.</li>
+  <li><strong>Real-time Responsiveness</strong>: Event-driven systems can react in near real-time to changes and events, leading to improved responsiveness and user experience.</li>
+  <li><strong>Event Logging and Auditing:</strong> Event-driven systems naturally generate event logs, which can be valuable for auditing, troubleshooting, and monitoring system behavior.</li>
+  <li><strong>Flexibility and Extensibility:</strong> as new components can be added as event producers or consumers without disrupting existing components.</li>
 </ul>
 
 <h2 id="how-to-adopt">How to Adopt</h2>
 
-<h3 id="project-setup-and-design">Project Setup and Design:</h3>
-
+<h3 id="identify-events-and-event-producersconsumers">Identify Events and Event Producers/Consumers:</h3>
 <ul>
-  <li><strong>Define the Scope:</strong> Clearly define the scope of your application.</li>
-  <li><strong>Architecture and Design:</strong> Plan the architecture of your application.</li>
-  <li><strong>Select Technology Stack:</strong> Choose the programming languages, frameworks, and tools that are most suitable for your application’s requirements.</li>
+  <li><strong>Identify Domain Events:</strong> Analyze your system to identify relevant events that occur within the domain.</li>
+  <li><strong>Identify Producers and Consumers:</strong> Determine which components or services will produce these events and which ones will consume them.</li>
+  <li><strong>Select Messaging Infrastructure:</strong>
+ Choose the appropriate communication mechanisms for your event channels. This could include message queues, publish-subscribe systems, event brokers, or even HTTP-based event APIs.</li>
 </ul>
 
-<h3 id="development-and-implementation">Development and Implementation:</h3>
+<h3 id="evaluate-tools-and-platforms">Evaluate Tools and Platforms:</h3>
+<p>Depending on your technology stack, evaluate messaging tools and platforms that support the chosen communication mechanisms. For example, you might consider using Apache Kafka, RabbitMQ, or cloud-based messaging services.</p>
+
+<h3 id="implement-event-driven-components">Implement Event-Driven Components:</h3>
 
 <ul>
-  <li><strong>Modular Design:</strong> Break down the application into logical modules or components.</li>
-  <li><strong>Coding Standards:</strong> Establish coding standards and guidelines to ensure consistency and maintainability across the codebase.</li>
-  <li><strong>Database Design:</strong> Design the database schema for your application.</li>
-</ul>
-
-<h3 id="testing-and-deployment">Testing and Deployment:</h3>
-
-<ul>
-  <li><strong>Unit Testing:</strong> Write unit tests for each module or component to ensure that they function as expected.</li>
-  <li><strong>Integration Testing:</strong> Conduct integration testing to verify that different modules of the application work together seamlessly.</li>
+  <li><strong>Implement Event Producers:</strong> These events should contain relevant data for consumers to process</li>
+  <li><strong>Implement Event Consumers:</strong> Develop components that subscribe to specific events and process them according to the defined logic.</li>
+  <li><strong>Handle Fault Tolerance:</strong> Implement mechanisms to handle retries, dead-letter queues, and error handling.</li>
 </ul>
 
     </div>

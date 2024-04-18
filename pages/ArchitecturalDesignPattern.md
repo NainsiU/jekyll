@@ -54,7 +54,7 @@ permalink: /architectural-patterns
   <div class="button">
     <div class="box">
       <a href="/architectural-styles/monolith/">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+        <img src="../pictures/monolithicarchitecture.jpg" alt="Picture 1">
         <h3>Monolithic Architecture</h3>
       </a>
     </div>
@@ -87,6 +87,9 @@ permalink: /architectural-patterns
       </a>
     </div>
   </div>
+
+ 
+
 
   <!-- Add more buttons similarly -->
 </div>

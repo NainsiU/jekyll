@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Monolithic Architecture</title>
+    <title>Microkernel Architecture</title>
 </head>
 <style>
     /* body {
@@ -178,44 +178,29 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Monolithic.png" alt="Monolithic Architecture" /></p>
+        <p><img src="../../pictures/Microkernel%20Architecture.jpg" alt="Microkernel Architecture" /></p>
 
-<p>A monolithic architecture is a traditional software design approach where an entire application is built as a single, tightly integrated unit.
-In a monolithic architecture, all components and modules of the application are combined into a single codebase, and they share the same runtime environment and database.</p>
+<p>In a microkernel-based system, the core functionality is kept as small as possible, with most of the traditional services and functionality implemented as separate, user-level processes or modules that run on top of the microkernel.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Simplicity:</strong> Monolithic architectures are often simpler to develop and deploy, making them suitable for small to moderately complex applications.</li>
-  <li><strong>Ease of Testing:</strong> Testing is simpler because all components are closely integrated.</li>
-  <li><strong>Development Velocity:</strong> Developers can make changes across the application quickly since they are working within a single codebase.</li>
-  <li><strong>Lower Latency:</strong> Intra-application communication within the same runtime environment is often faster compared to inter-service communication in a microservices architecture.</li>
+  <li><strong>Modularity:</strong>  Microkernels promote a high degree of modularity, separating core system functions (the microkernel itself) from other services and drivers. This modularity simplifies system development and maintenance because you can add, remove, or replace components without affecting the entire system.</li>
+  <li><strong>Reliability:</strong> By minimizing the functionality in the microkernel and pushing most services and drivers into user-space, the overall system can become more reliable. If a user-level service fails, it’s less likely to crash the entire system. This approach can lead to increased system uptime and stability.</li>
+  <li><strong>Security:</strong> The reduced trusted computing base (TCB) in a microkernel architecture means there’s less code running in privileged kernel mode. This can make the system more resistant to security vulnerabilities and attacks, as there are fewer opportunities for malicious code to exploit privileged access..</li>
+  <li><strong>Portability:</strong> Microkernels are often more portable across different hardware platforms. The microkernel provides a hardware abstraction layer, allowing the same microkernel to run on diverse hardware with minimal changes. User-level components, such as device drivers, can be hardware-specific, making the system adaptable to different platforms.</li>
 </ul>
 
 <h2 id="how-to-adopt">How to Adopt</h2>
 
-<h3 id="project-setup-and-design">Project Setup and Design:</h3>
+<h3 id="define-your-goals-and-requirements">Define Your Goals and Requirements:</h3>
+<p>Clearly define the goals and requirements of your software system, considering factors like reliability, security, modularity, and extensibility.
+Identify the specific areas where a microkernel architecture can provide benefits.</p>
 
-<ul>
-  <li><strong>Define the Scope:</strong> Clearly define the scope of your application.</li>
-  <li><strong>Architecture and Design:</strong> Plan the architecture of your application.</li>
-  <li><strong>Select Technology Stack:</strong> Choose the programming languages, frameworks, and tools that are most suitable for your application’s requirements.</li>
-</ul>
-
-<h3 id="development-and-implementation">Development and Implementation:</h3>
-
-<ul>
-  <li><strong>Modular Design:</strong> Break down the application into logical modules or components.</li>
-  <li><strong>Coding Standards:</strong> Establish coding standards and guidelines to ensure consistency and maintainability across the codebase.</li>
-  <li><strong>Database Design:</strong> Design the database schema for your application.</li>
-</ul>
-
-<h3 id="testing-and-deployment">Testing and Deployment:</h3>
-
-<ul>
-  <li><strong>Unit Testing:</strong> Write unit tests for each module or component to ensure that they function as expected.</li>
-  <li><strong>Integration Testing:</strong> Conduct integration testing to verify that different modules of the application work together seamlessly.</li>
-</ul>
+<h3 id="identify-microkernel-and-user--services">Identify Microkernel and User  Services:</h3>
+<p>Identify and implement the microkernel’s features and performance to ensure it meets your requirements.
+Determine which services and components will run in user space as separate processes or modules.
+Design and implement these user-level services to provide the required functionality.</p>
 
     </div>
     <!-- _includes/footer.md -->

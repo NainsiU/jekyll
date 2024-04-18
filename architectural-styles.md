@@ -7,7 +7,7 @@ permalink: /architectural-styles
 <div class="button-container">
   <div class="button">
     <div class="box">
-      <a href="/architectural-styles/monolith/">
+      <a href="/architectural-styles/monolith">
         <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
         &nbsp;
         <h3>Monolithic Architecture</h3>
@@ -43,3 +43,13 @@ permalink: /architectural-styles
     </div>
   </div>
 </div>
+
+<div class ="button">
+  <div class ="box">
+   <a href="/architectural-styles/microkernel">
+        <img src="/pictures/Microkernel Architecture.jpg" alt="Component based architecture">
+        &nbsp;
+        <h3>Microkernel Architecture</h3>
+      </a>
+    </div>
+  </div>

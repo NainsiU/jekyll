@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Monolithic Architecture</title>
+    <title>Event Driven</title>
 </head>
 <style>
     /* body {
@@ -178,44 +178,29 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Monolithic.png" alt="Monolithic Architecture" /></p>
+        <p><img src="../../pictures/Pipe%20&amp;%20Filter.jpg" alt="Pipe &amp; Filter" /></p>
 
-<p>A monolithic architecture is a traditional software design approach where an entire application is built as a single, tightly integrated unit.
-In a monolithic architecture, all components and modules of the application are combined into a single codebase, and they share the same runtime environment and database.</p>
+<p>In this style, data is passed through a series of processing components (filters) connected by pipes. It’s commonly used in data processing and transformation applications.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Simplicity:</strong> Monolithic architectures are often simpler to develop and deploy, making them suitable for small to moderately complex applications.</li>
-  <li><strong>Ease of Testing:</strong> Testing is simpler because all components are closely integrated.</li>
-  <li><strong>Development Velocity:</strong> Developers can make changes across the application quickly since they are working within a single codebase.</li>
-  <li><strong>Lower Latency:</strong> Intra-application communication within the same runtime environment is often faster compared to inter-service communication in a microservices architecture.</li>
+  <li><strong>Scalability:</strong> It is relatively straightforward to scale a pipe and filter system. You can add additional filters or instances of existing filters to process data in parallel, which can improve performance as data processing demands grow.</li>
+  <li><strong>Ease of Maintenance:</strong> The separation of processing into discrete filters simplifies maintenance. If a filter needs to be modified or replaced, it can be done without affecting the entire pipeline. This makes it easier to update and maintain the system over time.</li>
+  <li><strong>Clear Data Flow:</strong> The architecture enforces a clear, one-way data flow through the filters. This transparency makes it easier to understand the processing sequence and identify potential bottlenecks or errors in the data pipeline</li>
 </ul>
 
 <h2 id="how-to-adopt">How to Adopt</h2>
 
-<h3 id="project-setup-and-design">Project Setup and Design:</h3>
-
 <ul>
-  <li><strong>Define the Scope:</strong> Clearly define the scope of your application.</li>
-  <li><strong>Architecture and Design:</strong> Plan the architecture of your application.</li>
-  <li><strong>Select Technology Stack:</strong> Choose the programming languages, frameworks, and tools that are most suitable for your application’s requirements.</li>
+  <li><strong>Identify Data Processing Stages:</strong>Analyze your application’s data processing requirements and break down the processing into distinct stages or steps. Each stage should perform a specific data transformation or filtering operation.</li>
+  <li><strong>Design Filters:</strong>Create filters for each data processing stage. Filters are individual components responsible for a specific operation, and they should be designed to be self-contained, stateless, and reusable.</li>
+  <li><strong>Define Input and Output Interfaces:</strong>Clearly define the input and output interfaces for each filter. These interfaces should specify the data format and how filters communicate with one another.</li>
+  <li><strong>Establish Data Flow:</strong> Determine the order in which data will flow through the filters. Define the data flow pipeline, ensuring that data passes from one filter to the next in a logical sequence.</li>
+  <li><strong>Implement Filters:</strong> Develop the filters according to their design, ensuring they perform the intended data processing tasks accurately. Each filter should adhere to the specified input and output interfaces.</li>
+  <li><strong>Pipeline Configuration:</strong> Set up the configuration for the data processing pipeline. Define the sequence in which filters are connected and configure the data flow. This can be done through configuration files or code.</li>
 </ul>
 
-<h3 id="development-and-implementation">Development and Implementation:</h3>
-
-<ul>
-  <li><strong>Modular Design:</strong> Break down the application into logical modules or components.</li>
-  <li><strong>Coding Standards:</strong> Establish coding standards and guidelines to ensure consistency and maintainability across the codebase.</li>
-  <li><strong>Database Design:</strong> Design the database schema for your application.</li>
-</ul>
-
-<h3 id="testing-and-deployment">Testing and Deployment:</h3>
-
-<ul>
-  <li><strong>Unit Testing:</strong> Write unit tests for each module or component to ensure that they function as expected.</li>
-  <li><strong>Integration Testing:</strong> Conduct integration testing to verify that different modules of the application work together seamlessly.</li>
-</ul>
 
     </div>
     <!-- _includes/footer.md -->

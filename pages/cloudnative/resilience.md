@@ -1,39 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resilience in Cloud Computing</title>
+---
+title: Component-Based Architecture
+permalink: /cloud-native-attributes/resilience
+---
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      margin: 0;
-      padding: 0;
     }
 
     .container {
       max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-bottom: 50px;
     }
 
     h1 {
       text-align: center;
+      color: #333;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
       margin-bottom: 20px;
     }
 
-    h2 {
-      margin-top: 20px;
+    p {
+      line-height: 1.6;
+      color: #555;
     }
 
     ul {
-      list-style-type: disc;
       padding-left: 20px;
+      color: #555;
     }
 
-    p {
+    li {
       margin-bottom: 10px;
     }
 
@@ -44,18 +50,19 @@
       margin-bottom: 20px;
     }
 
-    .adoption-steps {
+    .how-to-adopt {
       background-color: #f9f9f9;
       padding: 20px;
       border-radius: 5px;
       margin-bottom: 20px;
     }
   </style>
-</head>
+
+
 <body>
   <div class="container">
     <h1>Resilience in Cloud Computing</h1>
-<img src="/pictures/microservices1.png" alt="Resilience">
+<img src="/pictures/resilience1.jpg" alt="Resilience">
     <div class="benefits">
       <h2>Benefits</h2>
       <ul>
@@ -67,8 +74,7 @@
         <li>Scalability: Cloud resilience facilitates the ability to scale resources up or down as needed, ensuring optimal performance and cost efficiency.</li>
       </ul>
     </div>
-
-    <div class="adoption-steps">
+<div class="how-to-adopt">
       <h2>Tangible Steps for Adoption</h2>
       <ol>
         <li>Identify Critical Applications and Data: Determine which applications and data are most critical to your organization's operations.</li>

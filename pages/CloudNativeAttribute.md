@@ -62,7 +62,7 @@ permalink: /cloud-native-attributes
   </div>
     <div class="button">
     <div class="box">
-      <a href="/architectural-styles/client-server">
+      <a href="/cloud-native-attributes/resilience">
         <img src="/pictures/Resilience.jpg" alt="Resilience"> 
         <h3>Resilience</h3>
         &nbsp;

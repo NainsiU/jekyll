@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Event Driven</title>
+    <title>Microkernel Architecture</title>
 </head>
 <style>
     /* body {
@@ -178,29 +178,29 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Pipe%20&amp;%20Filter.jpg" alt="Pipe &amp; Filter" /></p>
+        <p><img src="../../pictures/Microkernel%20Architecture.jpg" alt="Microkernel Architecture" /></p>
 
-<p>In this style, data is passed through a series of processing components (filters) connected by pipes. It’s commonly used in data processing and transformation applications.</p>
+<p>In a microkernel-based system, the core functionality is kept as small as possible, with most of the traditional services and functionality implemented as separate, user-level processes or modules that run on top of the microkernel.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Scalability:</strong> It is relatively straightforward to scale a pipe and filter system. You can add additional filters or instances of existing filters to process data in parallel, which can improve performance as data processing demands grow.</li>
-  <li><strong>Ease of Maintenance:</strong> The separation of processing into discrete filters simplifies maintenance. If a filter needs to be modified or replaced, it can be done without affecting the entire pipeline. This makes it easier to update and maintain the system over time.</li>
-  <li><strong>Clear Data Flow:</strong> The architecture enforces a clear, one-way data flow through the filters. This transparency makes it easier to understand the processing sequence and identify potential bottlenecks or errors in the data pipeline</li>
+  <li><strong>Modularity:</strong>  Microkernels promote a high degree of modularity, separating core system functions (the microkernel itself) from other services and drivers. This modularity simplifies system development and maintenance because you can add, remove, or replace components without affecting the entire system.</li>
+  <li><strong>Reliability:</strong> By minimizing the functionality in the microkernel and pushing most services and drivers into user-space, the overall system can become more reliable. If a user-level service fails, it’s less likely to crash the entire system. This approach can lead to increased system uptime and stability.</li>
+  <li><strong>Security:</strong> The reduced trusted computing base (TCB) in a microkernel architecture means there’s less code running in privileged kernel mode. This can make the system more resistant to security vulnerabilities and attacks, as there are fewer opportunities for malicious code to exploit privileged access..</li>
+  <li><strong>Portability:</strong> Microkernels are often more portable across different hardware platforms. The microkernel provides a hardware abstraction layer, allowing the same microkernel to run on diverse hardware with minimal changes. User-level components, such as device drivers, can be hardware-specific, making the system adaptable to different platforms.</li>
 </ul>
 
 <h2 id="how-to-adopt">How to Adopt</h2>
 
-<ul>
-  <li><strong>Identify Data Processing Stages:</strong>Analyze your application’s data processing requirements and break down the processing into distinct stages or steps. Each stage should perform a specific data transformation or filtering operation.</li>
-  <li><strong>Design Filters:</strong>Create filters for each data processing stage. Filters are individual components responsible for a specific operation, and they should be designed to be self-contained, stateless, and reusable.</li>
-  <li><strong>Define Input and Output Interfaces:</strong>Clearly define the input and output interfaces for each filter. These interfaces should specify the data format and how filters communicate with one another.</li>
-  <li><strong>Establish Data Flow:</strong> Determine the order in which data will flow through the filters. Define the data flow pipeline, ensuring that data passes from one filter to the next in a logical sequence.</li>
-  <li><strong>Implement Filters:</strong> Develop the filters according to their design, ensuring they perform the intended data processing tasks accurately. Each filter should adhere to the specified input and output interfaces.</li>
-  <li><strong>Pipeline Configuration:</strong> Set up the configuration for the data processing pipeline. Define the sequence in which filters are connected and configure the data flow. This can be done through configuration files or code.</li>
-</ul>
+<h3 id="define-your-goals-and-requirements">Define Your Goals and Requirements:</h3>
+<p>Clearly define the goals and requirements of your software system, considering factors like reliability, security, modularity, and extensibility.
+Identify the specific areas where a microkernel architecture can provide benefits.</p>
 
+<h3 id="identify-microkernel-and-user--services">Identify Microkernel and User  Services:</h3>
+<p>Identify and implement the microkernel’s features and performance to ensure it meets your requirements.
+Determine which services and components will run in user space as separate processes or modules.
+Design and implement these user-level services to provide the required functionality.</p>
 
     </div>
     <!-- _includes/footer.md -->

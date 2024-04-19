@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Event Driven</title>
+    <title>Strangler Pattern</title>
 </head>
 <style>
     /* body {
@@ -178,39 +178,28 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Event Driven1.png" alt="Event Driven" /></p>
+        <p><img src="../../pictures/Strangler.png" alt="Layered Architecture" /></p>
 
-<p>This pattern focuses on the flow of events, messages, and notifications between different components or services in a system. In an event-driven system, components react to events by processing the associated information and taking appropriate actions. This architecture is particularly useful for building scalable, loosely-coupled, and responsive systems.</p>
+<p>The Strangler is an architectural approach used to gradually replace or migrate from an existing system to a new one. It helps organizations transition from legacy systems to modern, cloud-native solutions in a phased and controlled manner. The Strangler pattern is particularly useful for organizations with large, complex legacy systems that want to take advantage of the benefits of cloud-native architecture, microservices, and scalability without the risks and disruptions associated with a full system replacement. It provides a structured and controlled approach to modernizing legacy systems.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Loose Coupling:</strong> This enhances flexibility and allows for changes to individual components without affecting the entire system.</li>
-  <li><strong>Real-time Responsiveness</strong>: Event-driven systems can react in near real-time to changes and events, leading to improved responsiveness and user experience.</li>
-  <li><strong>Event Logging and Auditing:</strong> Event-driven systems naturally generate event logs, which can be valuable for auditing, troubleshooting, and monitoring system behavior.</li>
-  <li><strong>Flexibility and Extensibility:</strong> as new components can be added as event producers or consumers without disrupting existing components.</li>
+  <li><strong>Reduced Risk:</strong> The Strangler pattern mitigates the risks associated with big-bang migrations. You can progressively replace components and validate the new system’s functionality.</li>
+  <li><strong>Incremental Progress:</strong> It allows for incremental progress in migrating to a new system, making it easier to manage the process and demonstrate value along the way.</li>
+  <li><strong>Minimized Downtime:</strong> Users experience minimal disruptions as features and components are gradually moved to the new system.</li>
+  <li><strong>Preservation of Investments:</strong> The pattern leverages existing investments in the old system by reusing functionalities that don’t require replacement.</li>
 </ul>
 
-<h2 id="how-to-adopt">How to Adopt</h2>
+<h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
 
-<h3 id="identify-events-and-event-producersconsumers">Identify Events and Event Producers/Consumers:</h3>
-<ul>
-  <li><strong>Identify Domain Events:</strong> Analyze your system to identify relevant events that occur within the domain.</li>
-  <li><strong>Identify Producers and Consumers:</strong> Determine which components or services will produce these events and which ones will consume them.</li>
-  <li><strong>Select Messaging Infrastructure:</strong>
- Choose the appropriate communication mechanisms for your event channels. This could include message queues, publish-subscribe systems, event brokers, or even HTTP-based event APIs.</li>
-</ul>
-
-<h3 id="evaluate-tools-and-platforms">Evaluate Tools and Platforms:</h3>
-<p>Depending on your technology stack, evaluate messaging tools and platforms that support the chosen communication mechanisms. For example, you might consider using Apache Kafka, RabbitMQ, or cloud-based messaging services.</p>
-
-<h3 id="implement-event-driven-components">Implement Event-Driven Components:</h3>
-
-<ul>
-  <li><strong>Implement Event Producers:</strong> These events should contain relevant data for consumers to process</li>
-  <li><strong>Implement Event Consumers:</strong> Develop components that subscribe to specific events and process them according to the defined logic.</li>
-  <li><strong>Handle Fault Tolerance:</strong> Implement mechanisms to handle retries, dead-letter queues, and error handling.</li>
-</ul>
+<ol>
+  <li><strong>Conduct a thorough analysis:</strong> Understand the architecture, components, dependencies, and pain points of your existing system. Identify the parts that need modernization or replacement.</li>
+  <li><strong>Identify “strangling points”:</strong> Determine the entry points through which requests will be intercepted and routed to the new system. These are where external systems or users interact with your software.</li>
+  <li><strong>Develop an incremental migration plan:</strong> Outline which features or functionalities will be migrated from the old system to the new one. Start with less critical or simpler components to gain experience.</li>
+  <li><strong>Gradually redirect traffic:</strong> Route traffic to the new system as features and components are successfully migrated.</li>
+  <li><strong>Plan for retirement:</strong> Once all relevant features and components have been migrated, and the old system is no longer needed, plan for its retirement or decommissioning.</li>
+</ol>
 
     </div>
     <!-- _includes/footer.md -->

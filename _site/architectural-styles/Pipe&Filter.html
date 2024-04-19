@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Event Driven</title>
+    <title>Pipe & Filter</title>
 </head>
 <style>
     /* body {
@@ -178,39 +178,29 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Event Driven1.png" alt="Event Driven" /></p>
+        <p><img src="../../pictures/Pipe%20&amp;%20Filter1.jpg" alt="Pipe &amp; Filter" /></p>
 
-<p>This pattern focuses on the flow of events, messages, and notifications between different components or services in a system. In an event-driven system, components react to events by processing the associated information and taking appropriate actions. This architecture is particularly useful for building scalable, loosely-coupled, and responsive systems.</p>
+<p>In this style, data is passed through a series of processing components (filters) connected by pipes. It’s commonly used in data processing and transformation applications.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Loose Coupling:</strong> This enhances flexibility and allows for changes to individual components without affecting the entire system.</li>
-  <li><strong>Real-time Responsiveness</strong>: Event-driven systems can react in near real-time to changes and events, leading to improved responsiveness and user experience.</li>
-  <li><strong>Event Logging and Auditing:</strong> Event-driven systems naturally generate event logs, which can be valuable for auditing, troubleshooting, and monitoring system behavior.</li>
-  <li><strong>Flexibility and Extensibility:</strong> as new components can be added as event producers or consumers without disrupting existing components.</li>
+  <li><strong>Scalability:</strong> It is relatively straightforward to scale a pipe and filter system. You can add additional filters or instances of existing filters to process data in parallel, which can improve performance as data processing demands grow.</li>
+  <li><strong>Ease of Maintenance:</strong> The separation of processing into discrete filters simplifies maintenance. If a filter needs to be modified or replaced, it can be done without affecting the entire pipeline. This makes it easier to update and maintain the system over time.</li>
+  <li><strong>Clear Data Flow:</strong> The architecture enforces a clear, one-way data flow through the filters. This transparency makes it easier to understand the processing sequence and identify potential bottlenecks or errors in the data pipeline</li>
 </ul>
 
 <h2 id="how-to-adopt">How to Adopt</h2>
 
-<h3 id="identify-events-and-event-producersconsumers">Identify Events and Event Producers/Consumers:</h3>
 <ul>
-  <li><strong>Identify Domain Events:</strong> Analyze your system to identify relevant events that occur within the domain.</li>
-  <li><strong>Identify Producers and Consumers:</strong> Determine which components or services will produce these events and which ones will consume them.</li>
-  <li><strong>Select Messaging Infrastructure:</strong>
- Choose the appropriate communication mechanisms for your event channels. This could include message queues, publish-subscribe systems, event brokers, or even HTTP-based event APIs.</li>
+  <li><strong>Identify Data Processing Stages:</strong>Analyze your application’s data processing requirements and break down the processing into distinct stages or steps. Each stage should perform a specific data transformation or filtering operation.</li>
+  <li><strong>Design Filters:</strong>Create filters for each data processing stage. Filters are individual components responsible for a specific operation, and they should be designed to be self-contained, stateless, and reusable.</li>
+  <li><strong>Define Input and Output Interfaces:</strong>Clearly define the input and output interfaces for each filter. These interfaces should specify the data format and how filters communicate with one another.</li>
+  <li><strong>Establish Data Flow:</strong> Determine the order in which data will flow through the filters. Define the data flow pipeline, ensuring that data passes from one filter to the next in a logical sequence.</li>
+  <li><strong>Implement Filters:</strong> Develop the filters according to their design, ensuring they perform the intended data processing tasks accurately. Each filter should adhere to the specified input and output interfaces.</li>
+  <li><strong>Pipeline Configuration:</strong> Set up the configuration for the data processing pipeline. Define the sequence in which filters are connected and configure the data flow. This can be done through configuration files or code.</li>
 </ul>
 
-<h3 id="evaluate-tools-and-platforms">Evaluate Tools and Platforms:</h3>
-<p>Depending on your technology stack, evaluate messaging tools and platforms that support the chosen communication mechanisms. For example, you might consider using Apache Kafka, RabbitMQ, or cloud-based messaging services.</p>
-
-<h3 id="implement-event-driven-components">Implement Event-Driven Components:</h3>
-
-<ul>
-  <li><strong>Implement Event Producers:</strong> These events should contain relevant data for consumers to process</li>
-  <li><strong>Implement Event Consumers:</strong> Develop components that subscribe to specific events and process them according to the defined logic.</li>
-  <li><strong>Handle Fault Tolerance:</strong> Implement mechanisms to handle retries, dead-letter queues, and error handling.</li>
-</ul>
 
     </div>
     <!-- _includes/footer.md -->

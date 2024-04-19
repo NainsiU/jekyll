@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Event Driven</title>
+    <title>Screaming Architecture</title>
 </head>
 <style>
     /* body {
@@ -178,39 +178,28 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Event Driven1.png" alt="Event Driven" /></p>
+        <p><img src="../../pictures/Screaming%20architecture1.png" alt="Screaming Architecture&quot;" /></p>
 
-<p>This pattern focuses on the flow of events, messages, and notifications between different components or services in a system. In an event-driven system, components react to events by processing the associated information and taking appropriate actions. This architecture is particularly useful for building scalable, loosely-coupled, and responsive systems.</p>
+<p>“Screaming architecture” is a term coined by software architect Robert C. Martin, also known as Uncle Bob, to emphasize the importance of clear, explicit, and highly visible architectural decisions in software development. The concept is rooted in the idea that the architecture of a software system should “scream” its intent and key design principles, making it immediately obvious to developers and maintainers. The term is used to encourage software developers to prioritize architectural decisions that are evident and straightforward, rather than hiding important architectural aspects beneath layers of complexity or indirection. The goal is to make it easy for developers to understand the system’s structure, design, and behavior just by looking at the code or the architecture.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Loose Coupling:</strong> This enhances flexibility and allows for changes to individual components without affecting the entire system.</li>
-  <li><strong>Real-time Responsiveness</strong>: Event-driven systems can react in near real-time to changes and events, leading to improved responsiveness and user experience.</li>
-  <li><strong>Event Logging and Auditing:</strong> Event-driven systems naturally generate event logs, which can be valuable for auditing, troubleshooting, and monitoring system behavior.</li>
-  <li><strong>Flexibility and Extensibility:</strong> as new components can be added as event producers or consumers without disrupting existing components.</li>
+  <li><strong>Improved Maintainability:</strong> It makes it easier to maintain software over time. When the key architectural decisions are evident, developers can more easily identify and modify components, leading to quicker and safer updates.</li>
+  <li><strong>Enhanced Readability:</strong> Clear naming conventions and explicit architectural choices make the codebase more readable. Developers can understand the purpose and functionality of various parts of the system without needing to spend excessive time deciphering complex or ambiguous code.</li>
+  <li><strong>Reduced Cognitive Load:</strong> Developers don’t need to keep as much in their heads when working with a system that follows a screaming architecture.</li>
+  <li><strong>Faster Onboarding:</strong> New team members can quickly get up to speed with the system, as they can readily grasp the architectural decisions and the organization of the codebase.</li>
+  <li><strong>Improved Collaboration:</strong> A system that uses screaming architecture fosters better collaboration among team members. When everyone understands the system’s design and principles, it’s easier to work together and make consistent contributions.</li>
 </ul>
 
-<h2 id="how-to-adopt">How to Adopt</h2>
+<h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
 
-<h3 id="identify-events-and-event-producersconsumers">Identify Events and Event Producers/Consumers:</h3>
-<ul>
-  <li><strong>Identify Domain Events:</strong> Analyze your system to identify relevant events that occur within the domain.</li>
-  <li><strong>Identify Producers and Consumers:</strong> Determine which components or services will produce these events and which ones will consume them.</li>
-  <li><strong>Select Messaging Infrastructure:</strong>
- Choose the appropriate communication mechanisms for your event channels. This could include message queues, publish-subscribe systems, event brokers, or even HTTP-based event APIs.</li>
-</ul>
-
-<h3 id="evaluate-tools-and-platforms">Evaluate Tools and Platforms:</h3>
-<p>Depending on your technology stack, evaluate messaging tools and platforms that support the chosen communication mechanisms. For example, you might consider using Apache Kafka, RabbitMQ, or cloud-based messaging services.</p>
-
-<h3 id="implement-event-driven-components">Implement Event-Driven Components:</h3>
-
-<ul>
-  <li><strong>Implement Event Producers:</strong> These events should contain relevant data for consumers to process</li>
-  <li><strong>Implement Event Consumers:</strong> Develop components that subscribe to specific events and process them according to the defined logic.</li>
-  <li><strong>Handle Fault Tolerance:</strong> Implement mechanisms to handle retries, dead-letter queues, and error handling.</li>
-</ul>
+<ol>
+  <li><strong>Naming Conventions:</strong> Use clear and meaningful names for variables, functions, classes, modules, and components. Avoid cryptic or abbreviated names.</li>
+  <li><strong>Explicit Design Patterns:</strong> Use recognized design patterns like Model-View-Controller (MVC) or microservices and make sure their roles and responsibilities are explicitly defined.</li>
+  <li><strong>Avoid Over-Engineering:</strong> Refrain from adding unnecessary layers of complexity or abstraction. Ensure that each component has a clear and justifiable purpose.</li>
+  <li><strong>Modularization:</strong> Break down your software into well-defined and loosely coupled modules or components, each with a specific responsibility.</li>
+</ol>
 
     </div>
     <!-- _includes/footer.md -->

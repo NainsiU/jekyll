@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Event Driven</title>
+    <title>Layered Architecture</title>
 </head>
 <style>
     /* body {
@@ -178,39 +178,31 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="../../pictures/Event Driven1.png" alt="Event Driven" /></p>
+        <p><img src="../../pictures/Layerd.png" alt="Layered Architecture" /></p>
 
-<p>This pattern focuses on the flow of events, messages, and notifications between different components or services in a system. In an event-driven system, components react to events by processing the associated information and taking appropriate actions. This architecture is particularly useful for building scalable, loosely-coupled, and responsive systems.</p>
+<p>Layered architecture, also known as the tiered architecture, is an architectural style that organizes a software system into distinct horizontal layers or tiers, each responsible for specific functions or services. The layers are usually arranged hierarchically, and each layer communicates with the adjacent layers. This approach promotes separation of concerns and modularity within the system.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Loose Coupling:</strong> This enhances flexibility and allows for changes to individual components without affecting the entire system.</li>
-  <li><strong>Real-time Responsiveness</strong>: Event-driven systems can react in near real-time to changes and events, leading to improved responsiveness and user experience.</li>
-  <li><strong>Event Logging and Auditing:</strong> Event-driven systems naturally generate event logs, which can be valuable for auditing, troubleshooting, and monitoring system behavior.</li>
-  <li><strong>Flexibility and Extensibility:</strong> as new components can be added as event producers or consumers without disrupting existing components.</li>
+  <li><strong>Separation of Concerns:</strong> Each layer has a well-defined responsibility and a clear separation of concerns. This separation makes it easier to manage complex systems by isolating and addressing issues within specific layers without impacting others.</li>
+  <li><strong>Scalability:</strong> Layered architectures can be scaled horizontally, meaning you can add more instances of a particular layer or tier to handle increased load or demand. For example, you can add more web servers or application servers to accommodate a growing number of users in the presentation and business logic layers.</li>
+  <li><strong>Interoperability:</strong> Different layers can be developed using diverse technologies and programming languages as long as they communicate through well-defined interfaces (APIs). This flexibility enables the integration of legacy systems and the reuse of existing components, promoting interoperability.</li>
 </ul>
 
 <h2 id="how-to-adopt">How to Adopt</h2>
 
-<h3 id="identify-events-and-event-producersconsumers">Identify Events and Event Producers/Consumers:</h3>
-<ul>
-  <li><strong>Identify Domain Events:</strong> Analyze your system to identify relevant events that occur within the domain.</li>
-  <li><strong>Identify Producers and Consumers:</strong> Determine which components or services will produce these events and which ones will consume them.</li>
-  <li><strong>Select Messaging Infrastructure:</strong>
- Choose the appropriate communication mechanisms for your event channels. This could include message queues, publish-subscribe systems, event brokers, or even HTTP-based event APIs.</li>
-</ul>
+<h3 id="identify-and-define-layers">Identify and Define Layers</h3>
 
-<h3 id="evaluate-tools-and-platforms">Evaluate Tools and Platforms:</h3>
-<p>Depending on your technology stack, evaluate messaging tools and platforms that support the chosen communication mechanisms. For example, you might consider using Apache Kafka, RabbitMQ, or cloud-based messaging services.</p>
+<p>Clearly define the layers in your application, such as the presentation layer, business logic layer, and data access layer. Make sure each layer has a well-defined responsibility.</p>
 
-<h3 id="implement-event-driven-components">Implement Event-Driven Components:</h3>
+<h3 id="separate-concerns">Separate Concerns</h3>
 
-<ul>
-  <li><strong>Implement Event Producers:</strong> These events should contain relevant data for consumers to process</li>
-  <li><strong>Implement Event Consumers:</strong> Develop components that subscribe to specific events and process them according to the defined logic.</li>
-  <li><strong>Handle Fault Tolerance:</strong> Implement mechanisms to handle retries, dead-letter queues, and error handling.</li>
-</ul>
+<p>Ensure that each layer is responsible for a specific set of concerns. For example, separate user interface code from business logic and data access code.</p>
+
+<h3 id="define-interfaces">Define Interfaces</h3>
+
+<p>Clearly define the interfaces or APIs that will be used for communication between layers. This helps in creating a clear boundary between layers and enforces loose coupling.</p>
 
     </div>
     <!-- _includes/footer.md -->

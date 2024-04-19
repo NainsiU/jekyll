@@ -1,11 +1,13 @@
 ---
-title: Event Driven
+title: Pipe & Filter
 
-permalink: /architectural-styles/Event Driven
+permalink: /architectural-styles/Pipe&Filter
 layout: pagelayout
 ---
 
-![Pipe & Filter](../../pictures/Pipe%20&%20Filter.jpg)
+
+
+![Pipe & Filter](../../pictures/Pipe%20&%20Filter1.jpg)
 
 In this style, data is passed through a series of processing components (filters) connected by pipes. It's commonly used in data processing and transformation applications.
 

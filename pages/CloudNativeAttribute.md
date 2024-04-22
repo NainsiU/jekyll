@@ -7,14 +7,14 @@ permalink: /cloud-native-attributes
 
 <style>
   .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding-bottom: 50px;
   }
 
   .button {
-    margin: 10px;
     text-align: center;
     border: 4px solid #ccc;
     padding: 10px;
@@ -22,8 +22,8 @@ permalink: /cloud-native-attributes
   }
 
   .button img {
-    width: 200px; /* Adjust as needed */
-    height: 120px ;
+    width: 150px; /* Adjust as needed */
+    height: auto;
     display: block;
     margin: 0 auto;
   }
@@ -39,14 +39,15 @@ permalink: /cloud-native-attributes
     width: 200px; /* Adjust as needed */
     text-align: center;
   }
-   h1 {
-      font-size: 36px; /* Increase font size */
-      text-align: left; /* Center align the text */
-      margin-top: 40px; /* Add some top margin */
-    }
 
-    .button a {
+  .button a {
     text-decoration: none;
+  }
+
+  h1 {
+    font-size: 36px; /* Increase font size */
+    text-align: left; /* Center align the text */
+    margin-top: 40px; /* Add some top margin */
   }
 </style>
 
@@ -54,42 +55,67 @@ permalink: /cloud-native-attributes
 <div class="button-container">
   <div class="button">
     <div class="box">
-      <a href="/architectural-styles/monolith/">
+      <a href="/cloud-native-attributes/immutableInfrastructure">
         <img src="/pictures/Immutable Infrastructure.jpeg" alt="Immutable Infrastructure">
         <h3>Immutable Infrastructure</h3>
       </a>
     </div>
   </div>
-    <div class="button">
+  <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/resilience">
         <img src="/pictures/Resilience.jpg" alt="Resilience"> 
         <h3>Resilience</h3>
-        &nbsp;
-        
       </a>
     </div>
   </div>
-    <div class="button">
-    <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/Scalability.jpg" alt="Scalability">
-        <h3>Scalability</h3>
-        &nbsp;
-      </a>
-    </div>
-  </div>
-
   <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/Statelessness.png" alt="Statelessness">
+      <a href="/cloud-native-attributes/scalability">
+        <img src="/pictures/Scalability.jpg" alt="Scalability">
+        <h3>Scalability</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/statelessness">
+        <img src="/pictures/Statelessness.jpg" alt="Statelessness">
         <h3>Statelessness</h3>
-        &nbsp;
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/elasticity">
+        <img src="/pictures/elasticityIcon.jpg" alt="Elasticity">
+        <h3>Elasticity</h3>
+      </a>
+    </div>
+  </div>
+<div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/API-Based">
+        <img src="/pictures/API-icon.png" alt="Api">
+        <h3>API BASED</h3>
+      </a>
+    </div>
+  </div>
+<div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/containers">
+        <img src="/pictures/Containers.jpg" alt="Api">
+        <h3>Containers</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/decoupled-services">
+        <img src="/pictures/decoupled-icon.jpg" alt="Api">
+        <h3>Decoupled Services</h3>
       </a>
     </div>
   </div>
 
-  <!-- Add more buttons similarly -->
-</div>
 {% include footer.md %}

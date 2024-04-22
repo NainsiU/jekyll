@@ -1,5 +1,5 @@
 ---
-title: Component-Based Architecture
+title: Microservices
 permalink: /architectural-styles/microservices
 ---
 {% include navbar.md %}

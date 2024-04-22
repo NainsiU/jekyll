@@ -1,0 +1,91 @@
+---
+title: Scalability
+permalink: /cloud-native-attributes/scalability
+---
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+  ul {
+    padding-left: 20px;
+    color: #555;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>Scalability in Cloud Computing</h1>
+    <img src="/pictures/scalability1.jpg" alt="Scalability Image">
+    <div class="benefits">
+      <h2>Benefits</h2>
+      <ul>
+        <li>Performance Optimization: Scalability ensures that applications and services maintain optimal performance even as user demand fluctuates.</li>
+        <li>Cost Efficiency: Resources can be scaled up during periods of high demand and scaled down during periods of lower demand, resulting in cost savings.</li>
+        <li>Elasticity: Resources can automatically scale up or down based on demand, providing a dynamic and efficient way to meet changing needs.</li>
+        <li>Improved User Experience: Scalable systems can handle increased loads without performance degradation, leading to a better user experience.</li>
+        <li>High Availability: Scalable architectures involve redundancy and failover mechanisms, enhancing the availability of applications and services.</li>
+      </ul>
+    </div>
+    <div class="how-to-adopt">
+      <h2>Tangible Steps for Adoption</h2>
+      <ul>
+        <li>Assess Workloads</li>
+        <li>Choose the Right Cloud Service Model</li>
+        <li>Design Stateless Architectures</li>
+        <li>Implement Load Balancers</li>
+        <li>Use Auto-Scaling</li>
+        <li>Elastic Database Scaling</li>
+        <li>Redundancy and Failover</li>
+        <li>Implement Caching</li>
+        <li>Content Delivery Networks (CDNs)</li>
+      </ul>
+    </div>
+  </div>
+</body>

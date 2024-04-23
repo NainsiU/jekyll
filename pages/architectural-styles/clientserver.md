@@ -67,7 +67,7 @@ permalink: /architectural-styles/client-server/
 <div class="container">
   <h1>Client/server architecture overview</h1>
   
-  <img src="./pictures/Client-Server.png" alt="Monolithic Architecture">
+  <img src="././pictures/Client-Server.png" alt="Monolithic Architecture">
   
   <p>In Client/server architecture tasks are divided between clients and servers in a networked environment. It is widely used in applications such as web browsing, email, file sharing, and more. Client is a user's device or software application that initiates requests for services or resources from the server. It is responsible for presenting information to users, interacting with them, and sending requests to servers. Server provides services or resources to clients by handling incoming requests, process data, perform computations, and manage resources. It stores and manages databases, files, and other resources that clients may need.</p>
 

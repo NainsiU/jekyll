@@ -60,8 +60,7 @@ permalink: /architectural-styles/component-Based/
     }
   </style>
 
-<div class="container">
-  <h1>Component-Based Architecture</h1>
+
   <img src="./pictures/component-based.png" alt="Component-Based Architecture">
   
   <p>Component-Based Architecture is to promote reusability, modularity, and maintainability of software. Components are designed to have clear interfaces, making it easier to interact with and integrate them within the system. This approach allows developers to focus on developing individual components with well-defined responsibilities, without needing to worry about the entire system's intricacies.</p>
@@ -87,7 +86,6 @@ permalink: /architectural-styles/component-Based/
       <li>Unit Testing: Write unit tests for your business logic components to ensure they behave as expected. By isolating the business logic, you can write focused tests that verify its correctness independently of other parts of the system.</li>
     </ul>
   </div>
-</div>
 
 {% include footer.md %}
 

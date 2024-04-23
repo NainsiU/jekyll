@@ -61,7 +61,7 @@ permalink: /architectural-styles/component-Based/
   </style>
 
 
-  <img src="./pictures/component-based.png" alt="Component-Based Architecture">
+  <img src="../../pictures/component-based.png" alt="Component-Based Architecture">
   
   <p>Component-Based Architecture is to promote reusability, modularity, and maintainability of software. Components are designed to have clear interfaces, making it easier to interact with and integrate them within the system. This approach allows developers to focus on developing individual components with well-defined responsibilities, without needing to worry about the entire system's intricacies.</p>
 

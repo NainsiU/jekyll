@@ -62,7 +62,7 @@ permalink: /cloud-native-attributes/eventDrivenArchitecture
 <body>
   <div class="container">
     <h1>Event-Driven Architecture</h1>
-    <img src="./pictures/Event Driven1.png" alt="Component-Based Architecture">
+    <img src="../../pictures/Event Driven1.png" alt="Component-Based Architecture">
     <div class="benefits">
       <h2>Benefits</h2>
       <ul>

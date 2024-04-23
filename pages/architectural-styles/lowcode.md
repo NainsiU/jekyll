@@ -3,7 +3,7 @@ title: Low-Code Development
 permalink: /architectural-styles/low-code
 layout: pagelayout
 ---
-![Low Code](../pictures/lowcode.png)
+![Low Code](/pictures/lowcode.png)
 
 Low-code development is an approach to software development that uses visual interfaces and pre-built components to enable users to create applications with minimal manual coding. It's designed to make application development more accessible to non-developers.
 

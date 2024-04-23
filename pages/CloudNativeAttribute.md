@@ -64,7 +64,7 @@ permalink: /cloud-native-attributes
   <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/resilience">
-        <img src="/pictures/Resilience.jpg" alt="Resilience"> 
+        <img src="./pictures/Resilience.jpg" alt="Resilience"> 
         <h3>Resilience</h3>
       </a>
     </div>
@@ -72,7 +72,7 @@ permalink: /cloud-native-attributes
   <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/scalability">
-        <img src="/pictures/Scalability.jpg" alt="Scalability">
+        <img src="./pictures/Scalability.jpg" alt="Scalability">
         <h3>Scalability</h3>
       </a>
     </div>
@@ -80,7 +80,7 @@ permalink: /cloud-native-attributes
   <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/statelessness">
-        <img src="/pictures/Statelessness.jpg" alt="Statelessness">
+        <img src="./pictures/Statelessness.jpg" alt="Statelessness">
         <h3>Statelessness</h3>
       </a>
     </div>
@@ -88,7 +88,7 @@ permalink: /cloud-native-attributes
   <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/elasticity">
-        <img src="/pictures/elasticityIcon.jpg" alt="Elasticity">
+        <img src="./pictures/elasticityIcon.jpg" alt="Elasticity">
         <h3>Elasticity</h3>
       </a>
     </div>
@@ -96,7 +96,7 @@ permalink: /cloud-native-attributes
 <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/API-Based">
-        <img src="/pictures/API-icon.png" alt="Api">
+        <img src="./pictures/API-icon.png" alt="Api">
         <h3>API BASED</h3>
       </a>
     </div>
@@ -104,7 +104,7 @@ permalink: /cloud-native-attributes
 <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/containers">
-        <img src="/pictures/Containers.jpg" alt="Api">
+        <img src="./pictures/Containers.jpg" alt="Api">
         <h3>Containers</h3>
       </a>
     </div>
@@ -112,7 +112,7 @@ permalink: /cloud-native-attributes
   <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/decoupled-services">
-        <img src="/pictures/decoupled-icon.jpg" alt="Api">
+        <img src="./pictures/decoupled-icon.jpg" alt="Api">
         <h3>Decoupled Services</h3>
       </a>
     </div>

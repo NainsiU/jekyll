@@ -56,7 +56,7 @@ permalink: /cloud-native-attributes
   <div class="button">
     <div class="box">
       <a href="/cloud-native-attributes/immutableInfrastructure">
-        <img src="/pictures/Immutable Infrastructure.jpeg" alt="Immutable Infrastructure">
+        <img src="./pictures/Immutable Infrastructure.jpeg" alt="Immutable Infrastructure">
         <h3>Immutable Infrastructure</h3>
       </a>
     </div>

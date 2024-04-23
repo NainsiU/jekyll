@@ -39,7 +39,7 @@ permalink: /architectural-styles
   <div class="button">
     <div class="box">
       <a href="/architectural-styles/monolith">
-        <img src="{{ jekyll.baseurl }}/pictures/monolithicarchitecture.jpg" alt="Resilience">
+        <img src="{{ jekyll.baseurl }}/pictures/monolithicarchitecture.jpg" alt="Monolith">
         <h3>Monolithic Architecture</h3>
       </a>
     </div>

@@ -4,7 +4,7 @@ permalink: /architectural-patterns/strangler
 layout: pagelayout
 ---
 
-![Layered Architecture](../../pictures/Strangler.png)
+![Strangler Pattern](../../pictures/Strangler.png)
 
 The Strangler is an architectural approach used to gradually replace or migrate from an existing system to a new one. It helps organizations transition from legacy systems to modern, cloud-native solutions in a phased and controlled manner. The Strangler pattern is particularly useful for organizations with large, complex legacy systems that want to take advantage of the benefits of cloud-native architecture, microservices, and scalability without the risks and disruptions associated with a full system replacement. It provides a structured and controlled approach to modernizing legacy systems.
 

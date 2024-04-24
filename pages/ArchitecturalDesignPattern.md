@@ -3,7 +3,7 @@ title: architectural-patterns
 permalink: /architectural-patterns
 ---
 
-{% include navbar.md %}
+
 
 <style>
   .button-container {
@@ -93,4 +93,3 @@ permalink: /architectural-patterns
 
   <!-- Add more buttons similarly -->
 </div>
-{% include footer.md %}

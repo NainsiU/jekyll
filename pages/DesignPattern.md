@@ -3,7 +3,7 @@ title: design-pattern
 permalink: /design-patterns
 ---
 
-{% include navbar.md %}
+
 
 <style>
   .button-container {
@@ -90,4 +90,3 @@ permalink: /design-patterns
 
   <!-- Add more buttons similarly -->
 </div>
-{% include footer.md %}

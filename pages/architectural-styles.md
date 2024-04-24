@@ -48,7 +48,7 @@ permalink: /architectural-styles
     <div class="box">
       <a href="/architectural-styles/client-server">
         <img src="./pictures/Client-server-icon.jpg" alt="Client/Server">
-        <h3>Client/Server</h3>
+        <h3>Client Server</h3>
       </a>
     </div>
   </div>

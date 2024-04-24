@@ -3,7 +3,7 @@ title: Security-design-patterns
 permalink: /security-design-patterns
 ---
 
-{% include navbar.md %}
+
 
 <style>
   .button-container {
@@ -100,4 +100,3 @@ permalink: /security-design-patterns
   </div>
   <!-- Add more buttons similarly -->
 </div>
-{% include footer.md %}

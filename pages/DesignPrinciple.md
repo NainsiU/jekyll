@@ -3,7 +3,7 @@ title: design-principles
 permalink: /design-principles
 ---
 
-{% include navbar.md %}
+
 
 <style>
   .button-container {
@@ -92,4 +92,4 @@ permalink: /design-principles
 
   <!-- Add more buttons similarly -->
 </div>
-{% include footer.md %}
+

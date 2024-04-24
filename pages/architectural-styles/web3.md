@@ -4,7 +4,7 @@ permalink: /architectural-patterns/web3
 layout: pagelayout
 ---
 
-![Web3](../../pictures/Web1.png)
+![Web3](./../../pictures/Web1.png)
 
 Web3 is a term associated with the development of a decentralized and blockchain-based web. It represents a vision of a more open and user-centric internet where individuals have more control over their data and digital interactions.
 

@@ -5,7 +5,7 @@ permalink: /architectural-styles/microkernel
 layout: pagelayout
 ---
 
-![Microkernel Architecture](../../pictures/Microkernel%20Architecture.jpg)
+![Microkernel Architecture](./../../pictures/Microkernel1.jpg)
 
 In a microkernel-based system, the core functionality is kept as small as possible, with most of the traditional services and functionality implemented as separate, user-level processes or modules that run on top of the microkernel.
 

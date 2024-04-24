@@ -5,7 +5,7 @@ permalink: /architectural-styles/Event-Driven
 layout: pagelayout
 ---
 
-![Event Driven](../../pictures/Event Driven1.png)
+![Event Driven](../../pictures/Event-Driven1.png)
 
 This pattern focuses on the flow of events, messages, and notifications between different components or services in a system. In an event-driven system, components react to events by processing the associated information and taking appropriate actions. This architecture is particularly useful for building scalable, loosely-coupled, and responsive systems.
 

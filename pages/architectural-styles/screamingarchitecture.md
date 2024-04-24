@@ -3,7 +3,7 @@ title: Screaming Architecture
 permalink: /architectural-patterns/screaming-architecture
 layout: pagelayout
 ---
-![Screaming Architecture"](../../pictures/Screaming%20architecture1.png)
+![Screaming Architecture"](./../../pictures/Screaming1.png)
 
 "Screaming architecture" is a term coined by software architect Robert C. Martin, also known as Uncle Bob, to emphasize the importance of clear, explicit, and highly visible architectural decisions in software development. The concept is rooted in the idea that the architecture of a software system should "scream" its intent and key design principles, making it immediately obvious to developers and maintainers. The term is used to encourage software developers to prioritize architectural decisions that are evident and straightforward, rather than hiding important architectural aspects beneath layers of complexity or indirection. The goal is to make it easy for developers to understand the system's structure, design, and behavior just by looking at the code or the architecture.
 

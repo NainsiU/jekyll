@@ -6,7 +6,7 @@ layout: pagelayout
 
 
 
-![Layered Architecture](../../pictures/Layerd.png)
+![Layered Architecture](./../../pictures/Layerd.png)
 
 Layered architecture, also known as the tiered architecture, is an architectural style that organizes a software system into distinct horizontal layers or tiers, each responsible for specific functions or services. The layers are usually arranged hierarchically, and each layer communicates with the adjacent layers. This approach promotes separation of concerns and modularity within the system.
 

@@ -1,20 +1,21 @@
 ---
+layout: default
 title: Cloud Native Attributes
 permalink: /cloud-native-attributes
 ---
 
-{% include navbar.md %}
+
 
 <style>
   .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding-bottom: 50px;
   }
 
   .button {
-    margin: 10px;
     text-align: center;
     border: 4px solid #ccc;
     padding: 10px;
@@ -22,8 +23,8 @@ permalink: /cloud-native-attributes
   }
 
   .button img {
-    width: 200px; /* Adjust as needed */
-    height: 120px ;
+    width: 150px; /* Adjust as needed */
+    height: auto;
     display: block;
     margin: 0 auto;
   }
@@ -39,57 +40,80 @@ permalink: /cloud-native-attributes
     width: 200px; /* Adjust as needed */
     text-align: center;
   }
-   h1 {
-      font-size: 36px; /* Increase font size */
-      text-align: left; /* Center align the text */
-      margin-top: 40px; /* Add some top margin */
-    }
 
-    .button a {
+  .button a {
     text-decoration: none;
   }
-</style>
 
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cloud Native Attributes</h1>
+  h1 {
+    font-size: 36px; /* Increase font size */
+    text-align: left; /* Center align the text */
+    margin-top: 40px; /* Add some top margin */
+  }
+</style>
 <div class="button-container">
   <div class="button">
     <div class="box">
-      <a href="/architectural-styles/monolith/">
-        <img src="/pictures/Immutable Infrastructure.jpeg" alt="Immutable Infrastructure">
+      <a href="/cloud-native-attributes/immutable-infrastructure">
+        <img src="./pictures/Immutable Infrastructure.jpeg" alt="Immutable Infrastructure">
         <h3>Immutable Infrastructure</h3>
       </a>
     </div>
   </div>
-    <div class="button">
-    <div class="box">
-      <a href="/architectural-styles/client-server">
-        <img src="/pictures/Resilience.jpg" alt="Resilience"> 
-        <h3>Resilience</h3>
-        &nbsp;
-        
-      </a>
-    </div>
-  </div>
-    <div class="button">
-    <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/Scalability.jpg" alt="Scalability">
-        <h3>Scalability</h3>
-        &nbsp;
-      </a>
-    </div>
-  </div>
-
   <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/Statelessness.png" alt="Statelessness">
+      <a href="/cloud-native-attributes/resilience">
+        <img src="./pictures/Resilience.jpg" alt="Resilience"> 
+        <h3>Resilience</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/scalability">
+        <img src="./pictures/Scalability.jpg" alt="Scalability">
+        <h3>Scalability</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/stateless">
+        <img src="./pictures/statelessicon.jpg" alt="Statelessness">
         <h3>Statelessness</h3>
-        &nbsp;
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/elasticity">
+        <img src="./pictures/elasticityicon.jpg" alt="Elasticity">
+        <h3>Elasticity</h3>
+      </a>
+    </div>
+  </div>
+<div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/api-based">
+        <img src="./pictures/api-icon.png" alt="APi">
+        <h3>API BASED</h3>
+      </a>
+    </div>
+  </div>
+<div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/container">
+        <img src="./pictures/containericon.png" alt="Containers">
+        <h3>Containers</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/cloud-native-attributes/decoupled-services">
+        <img src="./pictures/decoupledicon.jpg" alt="Decoupled">
+        <h3>Decoupled Services</h3>
       </a>
     </div>
   </div>
 
-  <!-- Add more buttons similarly -->
-</div>
-{% include footer.md %}

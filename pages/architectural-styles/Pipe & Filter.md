@@ -7,7 +7,7 @@ layout: pagelayout
 
 
 
-![Pipe & Filter](../../pictures/Pipe%20&%20Filter1.jpg)
+![Pipe & Filter](./../../pictures/Pipe&Filter1.jpg)
 
 In this style, data is passed through a series of processing components (filters) connected by pipes. It's commonly used in data processing and transformation applications.
 

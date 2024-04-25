@@ -4,7 +4,7 @@ permalink: /architectural-styles/monolith
 layout: pagelayout
 ---
 
-![Monolithic Architecture](./../../pictures/Monolithic.png)
+![Monolithic Architecture](../../pictures/Monolithic.png)
 
 A monolithic architecture is a traditional software design approach where an entire application is built as a single, tightly integrated unit.
 In a monolithic architecture, all components and modules of the application are combined into a single codebase, and they share the same runtime environment and database.

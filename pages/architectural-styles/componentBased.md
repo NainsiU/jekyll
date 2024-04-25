@@ -1,7 +1,6 @@
 ---
 title: Component-Based Architecture
 permalink: /architectural-styles/component-based
-layout: pagelayout
 ---
 
 ![Component-Based Architecture](./../../pictures/component-based.png)

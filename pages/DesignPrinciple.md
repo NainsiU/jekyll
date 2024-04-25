@@ -1,5 +1,6 @@
 ---
-title: design-principles
+layout: default
+title: Design Principles
 permalink: /design-principles
 ---
 
@@ -52,7 +53,7 @@ permalink: /design-principles
     }
 </style>
 
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Principles</h1>
+<!-- <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Principles</h1> -->
 <div class="button-container">
   <div class="button">
     <div class="box">

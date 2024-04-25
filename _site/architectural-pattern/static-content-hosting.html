@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stateless Architecture</title>
+    <title>Static Content Hosting</title>
 </head>
 <style>
     /* body {
@@ -178,44 +178,39 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="./../../pictures/Statelessness.png" alt="Stateless Architecture" /></p>
+        <h1 id="static-content-hosting">Static Content Hosting</h1>
 
-<p>In cloud computing, “statelessness” refers to a design and operational principle where a system or application does not rely on or store significant amounts of state information on the server or individual instances. Instead, stateless systems store most of their data and state information externally, typically in a centralized and shared storage system, a database, or another external service.</p>
+<p><img src="../../pictures/SCH.png" alt="Static Content Hosting" /></p>
+
+<p>Static content hosting refers to the practice of serving static files, such as HTML, CSS, JavaScript, images, and other assets, from a web server. It is commonly used for websites and applications to deliver content that doesn’t change dynamically for each user.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Scalability:</strong> Stateless systems are easier to scale horizontally. New instances or servers can be added to handle increased load without worrying about the state information tied to a specific instance.</li>
-  <li><strong>Fault Tolerance:</strong> Stateless systems are more fault-tolerant. If an instance fails, it can be replaced without significant disruption because state information is stored externally.</li>
-  <li><strong>Simplified Deployment:</strong> Stateless systems are easier to deploy and manage. It is less complex to spin up new instances since they don’t require state transfer or synchronization.</li>
-  <li><strong>High Availability:</strong> Stateless systems can be distributed across multiple regions or data centers, ensuring high availability and reducing the impact of regional failures.</li>
-  <li><strong>Resource Efficiency:</strong> Stateless systems use resources more efficiently. They can quickly allocate resources based on demand and release them when they are no longer needed.</li>
-  <li><strong>Easy Maintenance:</strong> Stateless systems simplify maintenance and updates. Instances can be replaced or updated without the need to migrate state information.</li>
+  <li><strong>Faster Load Times:</strong> Serving static content from dedicated hosting servers or content delivery networks (CDNs) typically results in faster load times for web pages and applications. This is crucial for providing a better user experience and reducing bounce rates.</li>
+  <li><strong>Scalability:</strong> Static content hosting services are often highly scalable. They can handle traffic spikes and high demand without straining server resources, ensuring reliable performance even during traffic surges.</li>
+  <li><strong>Global Reach:</strong> CDNs, which are commonly used for static content hosting, have a distributed network of servers across the globe. This means that static content can be cached and delivered from a server geographically closer to the user, reducing latency and improving content delivery worldwide.</li>
 </ul>
 
 <h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
 
 <ol>
-  <li>
-    <p><strong>Externalize State Data:</strong> Identify all state data that your application relies on, such as session information, user data, or temporary variables. Store this state data externally, typically in a database or a shared data store.</p>
+  <li><strong>Identify Static Content:</strong>
+    <ul>
+      <li>Identify all the static content files that your website or application uses. This includes images, stylesheets, JavaScript files, fonts, videos, and other assets that do not change dynamically.</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Implement Stateless Microservices:</strong> When designing or refactoring your applications, adopt a microservices architecture where each microservice is stateless and performs a specific function without storing state information.</p>
+  <li><strong>Select a Hosting Solution:</strong>
+    <ul>
+      <li>Choose a static content hosting solution that suits your needs. Common options include content delivery networks (CDNs), cloud storage services, or dedicated static content hosting providers.</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Session Management:</strong> If your application requires session management, store session data in an external caching or data store like Redis or a cloud-based cache service (e.g., AWS Elasticache or Azure Cache for Redis).</p>
-  </li>
-  <li>
-    <p><strong>Elastic Scaling:</strong> Take advantage of cloud provider features for auto-scaling based on demand. Stateless components can be easily scaled up or down to accommodate varying workloads.</p>
-  </li>
-  <li>
-    <p><strong>Use Serverless Computing:</strong> Consider serverless computing platforms, such as AWS Lambda, Azure Functions, or Google Cloud Functions, for stateless functions or tasks that can run independently without maintaining state.</p>
-  </li>
-  <li>
-    <p><strong>Avoid Sticky Sessions:</strong> If using load balancers, avoid sticky sessions (sessions tied to a specific server). Stateless applications should distribute requests evenly across all available instances.</p>
+  <li><strong>Configure Your Hosting Service:</strong>
+    <ul>
+      <li>Set up and configure your chosen hosting service. This may involve creating an account, configuring security settings, and defining storage containers or buckets for your static content.</li>
+    </ul>
   </li>
 </ol>
-
 
     </div>
     <!-- _includes/footer.md -->

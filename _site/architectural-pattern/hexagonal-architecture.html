@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stateless Architecture</title>
+    <title>Hexagonal Architecture</title>
 </head>
 <style>
     /* body {
@@ -178,44 +178,46 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="./../../pictures/Statelessness.png" alt="Stateless Architecture" /></p>
+        <h1 id="hexagonal-architecture">Hexagonal Architecture</h1>
 
-<p>In cloud computing, “statelessness” refers to a design and operational principle where a system or application does not rely on or store significant amounts of state information on the server or individual instances. Instead, stateless systems store most of their data and state information externally, typically in a centralized and shared storage system, a database, or another external service.</p>
+<p><img src="../../pictures/hexa.png" alt="Hexagonal Architecture" /></p>
+
+<p>The hexagonal architecture, also known as the Ports and Adapters pattern, promotes the separation of concerns in an application. It defines the core business logic (the hexagon) separately from the external interfaces (the ports and adapters) for interactions with the outside world.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>Hexagonal architecture divides an application into different layers, making it easier to develop, maintain, and extend individual components independently. It enforces loose coupling between the core application logic and external systems, such as databases, user interfaces, or external services.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Scalability:</strong> Stateless systems are easier to scale horizontally. New instances or servers can be added to handle increased load without worrying about the state information tied to a specific instance.</li>
-  <li><strong>Fault Tolerance:</strong> Stateless systems are more fault-tolerant. If an instance fails, it can be replaced without significant disruption because state information is stored externally.</li>
-  <li><strong>Simplified Deployment:</strong> Stateless systems are easier to deploy and manage. It is less complex to spin up new instances since they don’t require state transfer or synchronization.</li>
-  <li><strong>High Availability:</strong> Stateless systems can be distributed across multiple regions or data centers, ensuring high availability and reducing the impact of regional failures.</li>
-  <li><strong>Resource Efficiency:</strong> Stateless systems use resources more efficiently. They can quickly allocate resources based on demand and release them when they are no longer needed.</li>
-  <li><strong>Easy Maintenance:</strong> Stateless systems simplify maintenance and updates. Instances can be replaced or updated without the need to migrate state information.</li>
+  <li><strong>Modularity:</strong> Hexagonal architecture promotes a high degree of modularity in software, allowing individual components to be developed, maintained, and extended independently.</li>
+  <li><strong>Testability:</strong> It’s easier to write unit tests for the core business logic, as the external dependencies and interactions are abstracted behind ports and adapters. This leads to more reliable and maintainable software.</li>
+  <li><strong>Loose Coupling:</strong> The architecture enforces loose coupling between the core application logic and external systems, making it easier to change or replace components without affecting the entire application.</li>
 </ul>
 
 <h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
 
 <ol>
-  <li>
-    <p><strong>Externalize State Data:</strong> Identify all state data that your application relies on, such as session information, user data, or temporary variables. Store this state data externally, typically in a database or a shared data store.</p>
+  <li><strong>Implement Adapters:</strong>
+    <ul>
+      <li>Develop adapters that connect your application to external systems or frameworks, such as databases, user interfaces, or external services.</li>
+      <li>Ensure that these adapters implement the ports defined in the next step.</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Implement Stateless Microservices:</strong> When designing or refactoring your applications, adopt a microservices architecture where each microservice is stateless and performs a specific function without storing state information.</p>
+  <li><strong>Testing:</strong>
+    <ul>
+      <li>Write unit tests for the core business logic using mock or stub implementations of the adapters.</li>
+      <li>Ensure that the core logic can be tested in isolation from external dependencies.</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Session Management:</strong> If your application requires session management, store session data in an external caching or data store like Redis or a cloud-based cache service (e.g., AWS Elasticache or Azure Cache for Redis).</p>
-  </li>
-  <li>
-    <p><strong>Elastic Scaling:</strong> Take advantage of cloud provider features for auto-scaling based on demand. Stateless components can be easily scaled up or down to accommodate varying workloads.</p>
-  </li>
-  <li>
-    <p><strong>Use Serverless Computing:</strong> Consider serverless computing platforms, such as AWS Lambda, Azure Functions, or Google Cloud Functions, for stateless functions or tasks that can run independently without maintaining state.</p>
-  </li>
-  <li>
-    <p><strong>Avoid Sticky Sessions:</strong> If using load balancers, avoid sticky sessions (sessions tied to a specific server). Stateless applications should distribute requests evenly across all available instances.</p>
+  <li><strong>Data Flow:</strong>
+    <ul>
+      <li>Define the flow of data between the core logic and the adapters.</li>
+      <li>Clearly outline how data is passed in and out of the core logic through the defined ports.</li>
+    </ul>
   </li>
 </ol>
-
 
     </div>
     <!-- _includes/footer.md -->

@@ -1,5 +1,6 @@
 ---
-title: Security-design-patterns
+layout: default
+title: Security Design Patterns
 permalink: /security-design-patterns
 ---
 
@@ -49,7 +50,7 @@ permalink: /security-design-patterns
     }
 </style>
 
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security Design Patterns</h1>
+<!-- <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security Design Patterns</h1> -->
 <div class="button-container">
   <div class="button">
     <div class="box">

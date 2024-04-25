@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stateless Architecture</title>
+    <title>Model-View-Controller (MVC)</title>
 </head>
 <style>
     /* body {
@@ -178,44 +178,45 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="./../../pictures/Statelessness.png" alt="Stateless Architecture" /></p>
+        <h1 id="model-view-controller-mvc">Model-View-Controller (MVC)</h1>
 
-<p>In cloud computing, “statelessness” refers to a design and operational principle where a system or application does not rely on or store significant amounts of state information on the server or individual instances. Instead, stateless systems store most of their data and state information externally, typically in a centralized and shared storage system, a database, or another external service.</p>
+<p><img src="../../pictures/mvc.png" alt="Model-View-Controller (MVC)" /></p>
+
+<p>Model-View-Controller (MVC) is commonly used to organize the structure of applications. It helps to separate different aspects of an application’s logic, making it more modular and easier to manage.</p>
+
+<h2 id="overview">Overview</h2>
+
+<ul>
+  <li><strong>Model:</strong> Represents the core data and logic of the application.</li>
+  <li><strong>View:</strong> Responsible for presenting the data to the user and handling the user interface components.</li>
+  <li><strong>Controller:</strong> Acts as an intermediary between the Model and the View. It receives user input from the View, processes it, and interacts with the Model accordingly.</li>
+</ul>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Scalability:</strong> Stateless systems are easier to scale horizontally. New instances or servers can be added to handle increased load without worrying about the state information tied to a specific instance.</li>
-  <li><strong>Fault Tolerance:</strong> Stateless systems are more fault-tolerant. If an instance fails, it can be replaced without significant disruption because state information is stored externally.</li>
-  <li><strong>Simplified Deployment:</strong> Stateless systems are easier to deploy and manage. It is less complex to spin up new instances since they don’t require state transfer or synchronization.</li>
-  <li><strong>High Availability:</strong> Stateless systems can be distributed across multiple regions or data centers, ensuring high availability and reducing the impact of regional failures.</li>
-  <li><strong>Resource Efficiency:</strong> Stateless systems use resources more efficiently. They can quickly allocate resources based on demand and release them when they are no longer needed.</li>
-  <li><strong>Easy Maintenance:</strong> Stateless systems simplify maintenance and updates. Instances can be replaced or updated without the need to migrate state information.</li>
+  <li><strong>Modularity:</strong> MVC promotes the separation of concerns, making the application’s components more independent and easier to maintain.</li>
+  <li><strong>Reusability:</strong> Each component (Model, View, and Controller) can be reused in different contexts without affecting other parts of the application.</li>
+  <li><strong>Scalability:</strong> The modular structure of MVC allows for easier scalability as different parts of the application can be modified or expanded without affecting the entire system.</li>
 </ul>
 
 <h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
 
 <ol>
-  <li>
-    <p><strong>Externalize State Data:</strong> Identify all state data that your application relies on, such as session information, user data, or temporary variables. Store this state data externally, typically in a database or a shared data store.</p>
+  <li><strong>Component Separation:</strong> Start by dividing your existing codebase into distinct components:
+    <ul>
+      <li>Identify the logic responsible for data management (DM), user interface rendering (UIR), and user interactions (UI).</li>
+      <li>Separate these concerns into their respective components.</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Implement Stateless Microservices:</strong> When designing or refactoring your applications, adopt a microservices architecture where each microservice is stateless and performs a specific function without storing state information.</p>
-  </li>
-  <li>
-    <p><strong>Session Management:</strong> If your application requires session management, store session data in an external caching or data store like Redis or a cloud-based cache service (e.g., AWS Elasticache or Azure Cache for Redis).</p>
-  </li>
-  <li>
-    <p><strong>Elastic Scaling:</strong> Take advantage of cloud provider features for auto-scaling based on demand. Stateless components can be easily scaled up or down to accommodate varying workloads.</p>
-  </li>
-  <li>
-    <p><strong>Use Serverless Computing:</strong> Consider serverless computing platforms, such as AWS Lambda, Azure Functions, or Google Cloud Functions, for stateless functions or tasks that can run independently without maintaining state.</p>
-  </li>
-  <li>
-    <p><strong>Avoid Sticky Sessions:</strong> If using load balancers, avoid sticky sessions (sessions tied to a specific server). Stateless applications should distribute requests evenly across all available instances.</p>
+  <li><strong>Implement the Communication Flow:</strong>
+    <ul>
+      <li><strong>Model-View Interaction:</strong> Ensure that the Model can notify the View when its data changes. You might use mechanisms like callbacks, events, or observers for this purpose.</li>
+      <li><strong>View-Controller Interaction:</strong> Set up the View to send user input events (such as button clicks) to the Controller.</li>
+      <li><strong>Controller-Model Interaction:</strong> The Controller can directly manipulate the Model to update data based on user actions or business logic requirements.</li>
+    </ul>
   </li>
 </ol>
-
 
     </div>
     <!-- _includes/footer.md -->

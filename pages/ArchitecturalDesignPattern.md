@@ -1,23 +1,18 @@
 ---
-title: architectural-patterns
+layout: default
+title: Architectural Design Patterns
 permalink: /architectural-patterns
 ---
-
-
-
 <style>
   .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
     padding-bottom: 50px;
   }
 
-  .button a {
-    text-decoration: none;
-  }
   .button {
-    margin: 10px;
     text-align: center;
     border: 4px solid #ccc;
     padding: 10px;
@@ -42,53 +37,75 @@ permalink: /architectural-patterns
     width: 200px; /* Adjust as needed */
     text-align: center;
   }
-   h1 {
-      font-size: 36px; /* Increase font size */
-      text-align: left; /* Center align the text */
-      margin-top: 40px; /* Add some top margin */
-    }
+
+  .button a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 36px; /* Increase font size */
+    text-align: left; /* Center align the text */
+    margin-top: 40px; /* Add some top margin */
+  }
 </style>
 
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Architectural Design Patterns</h1>
 <div class="button-container">
   <div class="button">
     <div class="box">
-      <a href="/architectural-styles/monolith/">
-        <img src="../pictures/monolithicarchitecture.jpg" alt="Picture 1">
-        <h3>Monolithic Architecture</h3>
+      <a href="/architectural-pattern/model-view-controller">
+        <img src="../pictures/mvcicon.png" alt="MVC">
+        <h3>Model View Controller(MVC)</h3>
       </a>
     </div>
   </div>
     <div class="button">
     <div class="box">
-      <a href="/architectural-styles/client-server">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
-        <h3>Client/Server</h3>
+      <a href="/architectural-pattern/domain-driven-design">
+        <img src="../pictures/dddicon.png" alt="DDD">
+        <h3>Domain Driven Design(DDD)</h3>
         &nbsp;
-        
-      </a>
+        </a>
     </div>
   </div>
     <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
-        <h3>Component Based</h3>
+      <a href="/architectural-pattern/hexagonal-architecture">
+        <img src="../pictures/hexaicon.png" alt="Hexagonal">
+        <h3>Hexagonal</h3>
       </a>
     </div>
   </div>
 
   <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
-        <h3>Microservices</h3>
+      <a href="/architectural-pattern/mvp">
+        <img src="../pictures/mvpicon.png" alt="MVP">
+        <h3>MVP (Model View Presenter)</h3>
         &nbsp;
       </a>
     </div>
   </div>
 
- 
+  <div class="button">
+    <div class="box">
+      <a href="/architectural-pattern/static-content-hosting">
+        <img src="../pictures/SCH.png" alt="SCH">
+        <h3>Static Content Hosting</h3>
+        &nbsp;
+      </a>
+    </div>
+  </div>
+
+ <div class="button">
+    <div class="box">
+      <a href="/architectural-patterns/backend-for-frontend">
+        <img src="../pictures/bfficon.png" alt="SCH">
+        <h3>Backend For Frontend(BFF)</h3>
+        &nbsp;
+      </a>
+    </div>
+  </div>
+
 
 
   <!-- Add more buttons similarly -->

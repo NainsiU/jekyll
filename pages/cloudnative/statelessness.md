@@ -4,7 +4,7 @@ permalink: /cloud-native-attributes/stateless
 layout: pagelayout
 ---
 
-![Stateless Architecture](../../pictures/Statelessness.png)
+![Stateless Architecture](./../../pictures/Statelessness.png)
 
 In cloud computing, "statelessness" refers to a design and operational principle where a system or application does not rely on or store significant amounts of state information on the server or individual instances. Instead, stateless systems store most of their data and state information externally, typically in a centralized and shared storage system, a database, or another external service.
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stateless Architecture</title>
+    <title>Model-View-Presenter(MVP)</title>
 </head>
 <style>
     /* body {
@@ -178,44 +178,44 @@ li {
 </div>
 
     <div class="container">
-        <p><img src="./../../pictures/Statelessness.png" alt="Stateless Architecture" /></p>
+        <h1 id="model-view-presentermvp">Model-View-Presenter(MVP)</h1>
+<p><img src="../../pictures/MVP.png" alt="Model-View-Presenter(MVP)" /></p>
 
-<p>In cloud computing, “statelessness” refers to a design and operational principle where a system or application does not rely on or store significant amounts of state information on the server or individual instances. Instead, stateless systems store most of their data and state information externally, typically in a centralized and shared storage system, a database, or another external service.</p>
+<p>MVP is a design pattern used in software development, especially for developing user interfaces. It separates the application into three components: Model (data and business logic), View (user interface and presentation), and Presenter (mediator between Model and View).</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>MVP enforces a clear separation of concerns, with distinct components for the model (data and business logic), view (user interface), and presenter (application logic). This separation simplifies the design and maintenance of the software.</p>
 
 <h2 id="benefits">Benefits</h2>
 
 <ul>
-  <li><strong>Scalability:</strong> Stateless systems are easier to scale horizontally. New instances or servers can be added to handle increased load without worrying about the state information tied to a specific instance.</li>
-  <li><strong>Fault Tolerance:</strong> Stateless systems are more fault-tolerant. If an instance fails, it can be replaced without significant disruption because state information is stored externally.</li>
-  <li><strong>Simplified Deployment:</strong> Stateless systems are easier to deploy and manage. It is less complex to spin up new instances since they don’t require state transfer or synchronization.</li>
-  <li><strong>High Availability:</strong> Stateless systems can be distributed across multiple regions or data centers, ensuring high availability and reducing the impact of regional failures.</li>
-  <li><strong>Resource Efficiency:</strong> Stateless systems use resources more efficiently. They can quickly allocate resources based on demand and release them when they are no longer needed.</li>
-  <li><strong>Easy Maintenance:</strong> Stateless systems simplify maintenance and updates. Instances can be replaced or updated without the need to migrate state information.</li>
+  <li><strong>Separation of Concerns:</strong> MVP enforces a clear separation of concerns, making the design and maintenance of the software simpler.</li>
+  <li><strong>Testability:</strong> The pattern facilitates comprehensive testing of an application, allowing for unit testing of the presenter to ensure thorough testing of application logic.</li>
+  <li><strong>Modularity:</strong> The modular structure of MVP makes it easier to develop, maintain, and extend the application, with changes in one component having minimal impact on the others.</li>
 </ul>
 
 <h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
 
 <ol>
-  <li>
-    <p><strong>Externalize State Data:</strong> Identify all state data that your application relies on, such as session information, user data, or temporary variables. Store this state data externally, typically in a database or a shared data store.</p>
+  <li><strong>Choose a Framework or Library:</strong>
+    <ul>
+      <li>Select a framework or library that supports the MVP pattern for your chosen technology stack (e.g., a web framework for web applications, a GUI framework for desktop applications).</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Implement Stateless Microservices:</strong> When designing or refactoring your applications, adopt a microservices architecture where each microservice is stateless and performs a specific function without storing state information.</p>
+  <li><strong>Implementation of the Model:</strong>
+    <ul>
+      <li>Implement the Model component to manage data and application logic.</li>
+      <li>Define data structures, database interactions, and any necessary business rules.</li>
+    </ul>
   </li>
-  <li>
-    <p><strong>Session Management:</strong> If your application requires session management, store session data in an external caching or data store like Redis or a cloud-based cache service (e.g., AWS Elasticache or Azure Cache for Redis).</p>
-  </li>
-  <li>
-    <p><strong>Elastic Scaling:</strong> Take advantage of cloud provider features for auto-scaling based on demand. Stateless components can be easily scaled up or down to accommodate varying workloads.</p>
-  </li>
-  <li>
-    <p><strong>Use Serverless Computing:</strong> Consider serverless computing platforms, such as AWS Lambda, Azure Functions, or Google Cloud Functions, for stateless functions or tasks that can run independently without maintaining state.</p>
-  </li>
-  <li>
-    <p><strong>Avoid Sticky Sessions:</strong> If using load balancers, avoid sticky sessions (sessions tied to a specific server). Stateless applications should distribute requests evenly across all available instances.</p>
+  <li><strong>Implementation of the View:</strong>
+    <ul>
+      <li>Create the View component to handle the presentation of the UI.</li>
+      <li>Design the user interface with a focus on layout, visual elements, and user experience.</li>
+    </ul>
   </li>
 </ol>
-
 
     </div>
     <!-- _includes/footer.md -->

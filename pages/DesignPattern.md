@@ -1,5 +1,6 @@
 ---
-title: design-pattern
+layout: default
+title: Design Patterns
 permalink: /design-patterns
 ---
 
@@ -49,7 +50,7 @@ permalink: /design-patterns
     }
 </style>
 
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design patterns</h1>
+<!-- <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design patterns</h1> -->
 <div class="button-container">
   <div class="button">
     <div class="box">

@@ -1,6 +1,7 @@
 ---
 title: Client Server 
 permalink: /architectural-styles/client-server
+layout: pagelayout
 ---
 
 ![Client Server](./../../pictures/client_server_architecture.png)

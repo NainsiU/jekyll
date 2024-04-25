@@ -1,10 +1,10 @@
 ---
-title: Client/Server Architecture
+title: Client Server 
 permalink: /architectural-styles/client-server
 layout: pagelayout
 ---
 
-![Client/Server Architecture](./../../pictures/client_server_architecture.png)
+![Client Server](./../../pictures/client_server_architecture.png)
 
 In client/server architecture, tasks are divided between clients and servers in a networked environment. It is widely used in applications such as web browsing, email, file sharing, and more.
 

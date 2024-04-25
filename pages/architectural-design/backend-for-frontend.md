@@ -6,7 +6,7 @@ layout: pagelayout
 
 # Backend for Frontend(BFF)
 
-![Backend for Frontend(BFF)](../../pictures/bff.png)
+![Backend for Frontend(BFF)](./../../pictures/bff.png)
 
 The backend for frontend is an architectural pattern in which different back-end services are tailored to specific user interfaces or client applications. It helps optimize the data and functionality provided to different front-end clients.
 

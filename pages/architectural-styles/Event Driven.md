@@ -1,6 +1,5 @@
 ---
 title: Event Driven
-
 permalink: /architectural-styles/Event-Driven
 layout: pagelayout
 ---

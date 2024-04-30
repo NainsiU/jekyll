@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security by Design</title>
+</head>
+<style>
+    /* body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+  ul {
+    padding-left: 20px;
+    color: #555;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
+  body {
+  font-family: Arial, sans-serif;
+  }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+ul {
+  padding-left: 20px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.container .benefits {
+    /* background-color: #f9f9f9; */
+    /* background-color: aqua; */
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    /* background-color: #f9f9f9; */
+    background-color: aqua;
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } 
+
+</style>
+
+<body>
+    <!-- _includes/navbar.md -->
+
+<style>
+  .navbar {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: center; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  .navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from navbar links */
+    padding: 10px 20px; /* Padding around navbar links */
+    margin: 0 5px; /* Add margin to navbar links */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    position: relative; /* Positioning context for the line */
+    font-size: 14.5px;
+  }
+  .navbar1 {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: left; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  .navbar a:not(:last-child):after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position the line absolutely */
+    top: 50%; /* Align the line vertically */
+    right: 0; /* Position the line to the right */
+    transform: translateY(-50%); /* Center the line vertically */
+    width: 1px; /* Line width */
+    height: 80%; /* Line height */
+    background-color: #fff; /* Line color */
+  }
+
+  .navbar a:hover {
+    background-color: #2980b9; /* Background color on hover */
+  }
+</style>
+
+<div class="navbar">
+<div class="navbar1">
+<a href="/">&nbsp;&nbsp;Home</a>
+</div>
+  <div>
+  <a href="/architectural-styles">Architectural Styles</a>
+  <a href="/cloud-native-attributes">Cloud Native Attributes</a>
+  <a href="/design-principles">Design Principles</a>
+  <a href="/design-patterns">Design Patterns</a>
+  <a href="/security-design-patterns">Security Patterns</a>
+  <a href="/architectural-patterns">Architectural Patterns</a>
+  </div>
+</div>
+
+    <div class="container">
+        <p><img src="./../../pictures/security-by-design.png" alt="Security by Design" /></p>
+
+<p>Security by Design refers to a proactive approach to designing and implementing cloud-based systems and applications with security as a fundamental and integral part of the design process. This approach emphasizes the incorporation of security measures and best practices from the very beginning of the cloud solution’s development, rather than treating security as an afterthought.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<ul>
+  <li>
+    <p><strong>Preventive Approach:</strong><br />
+Proactively identifying and addressing security issues during the design phase helps prevent security vulnerabilities and threats from the outset.</p>
+  </li>
+  <li>
+    <p><strong>Data Protection:</strong><br />
+Strong security measures protect sensitive data and build trust with customers and users.</p>
+  </li>
+  <li>
+    <p><strong>Resilience:</strong><br />
+Security by Design promotes system resilience, making cloud-based systems more robust and capable of withstanding attacks or failures.</p>
+  </li>
+  <li>
+    <p><strong>Efficiency:</strong><br />
+Automated security processes and measures make security management more efficient and less error-prone.</p>
+  </li>
+  <li>
+    <p><strong>Scalability:</strong><br />
+A secure cloud design can easily scale to accommodate growth without compromising security.</p>
+  </li>
+  <li>
+    <p><strong>Sustainability:</strong><br />
+Implementing security by design ensures that security is a sustainable practice rather than an occasional concern.</p>
+  </li>
+</ul>
+
+<h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
+
+<ol>
+  <li>
+    <p><strong>Conduct a Security Requirements Analysis:</strong><br />
+Identify the specific security needs and threats relevant to your project. Consider industry-specific standards and compliance requirements.</p>
+  </li>
+  <li>
+    <p><strong>Apply Secure Design Principles:</strong><br />
+Apply secure design principles, such as the principle of least privilege, defence in depth, and separation of concerns, when architecting your cloud-based solution.</p>
+  </li>
+  <li>
+    <p><strong>Evaluate &amp; Prioritize Security Risks:</strong><br />
+Evaluate and prioritize security risks based on the likelihood and potential impact of each threat.</p>
+  </li>
+  <li>
+    <p><strong>Implement Encryption:</strong><br />
+Apply encryption to data at rest and data in transit. Implement strong data protection measures to safeguard sensitive information.</p>
+  </li>
+  <li>
+    <p><strong>Establish Logging and Monitoring:</strong><br />
+Establish comprehensive logging and monitoring capabilities to detect and respond to security events and anomalies.</p>
+  </li>
+  <li>
+    <p><strong>Evaluate Third-Party Components:</strong><br />
+Evaluate the security of third-party components and services you integrate into your cloud environment.</p>
+  </li>
+  <li>
+    <p><strong>Implement Automated Security Scanning Tools:</strong><br />
+Implement automated security scanning tools that regularly check for vulnerabilities and misconfigurations in your cloud environment and application. Ensure they meet your security standards.</p>
+  </li>
+</ol>
+
+    </div>
+    <!-- _includes/footer.md -->
+
+<style>
+  .footer {
+    padding-top: 40px;
+    background-color: lightblue; /* Light background color */
+    padding: 20px 0; /* Padding around footer content */
+    text-align: center; /* Center align footer content */
+    font-size: 14px; /* Set font size */
+    color: #333; /* Text color */
+  }
+</style>
+
+<div class="footer">
+  <p>Copyright &copy; 2024 Company. All rights reserved.</p>
+  <p>Contact: info@company.com | Phone: 123-456-7890</p>
+  <p>Follow us on <a href="https://twitter.com/yourcompany">Twitter</a> | <a href="https://www.facebook.com/yourcompany">Facebook</a></p>
+</div>
+
+</body>
+</html>

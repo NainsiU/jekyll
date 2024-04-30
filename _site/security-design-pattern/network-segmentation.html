@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Segmentation</title>
+</head>
+<style>
+    /* body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+  ul {
+    padding-left: 20px;
+    color: #555;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
+  body {
+  font-family: Arial, sans-serif;
+  }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+ul {
+  padding-left: 20px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.container .benefits {
+    /* background-color: #f9f9f9; */
+    /* background-color: aqua; */
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    /* background-color: #f9f9f9; */
+    background-color: aqua;
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } 
+
+</style>
+
+<body>
+    <!-- _includes/navbar.md -->
+
+<style>
+  .navbar {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: center; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  .navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from navbar links */
+    padding: 10px 20px; /* Padding around navbar links */
+    margin: 0 5px; /* Add margin to navbar links */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    position: relative; /* Positioning context for the line */
+    font-size: 14.5px;
+  }
+  .navbar1 {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: left; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  .navbar a:not(:last-child):after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position the line absolutely */
+    top: 50%; /* Align the line vertically */
+    right: 0; /* Position the line to the right */
+    transform: translateY(-50%); /* Center the line vertically */
+    width: 1px; /* Line width */
+    height: 80%; /* Line height */
+    background-color: #fff; /* Line color */
+  }
+
+  .navbar a:hover {
+    background-color: #2980b9; /* Background color on hover */
+  }
+</style>
+
+<div class="navbar">
+<div class="navbar1">
+<a href="/">&nbsp;&nbsp;Home</a>
+</div>
+  <div>
+  <a href="/architectural-styles">Architectural Styles</a>
+  <a href="/cloud-native-attributes">Cloud Native Attributes</a>
+  <a href="/design-principles">Design Principles</a>
+  <a href="/design-patterns">Design Patterns</a>
+  <a href="/security-design-patterns">Security Patterns</a>
+  <a href="/architectural-patterns">Architectural Patterns</a>
+  </div>
+</div>
+
+    <div class="container">
+        <p><img src="./../../pictures/Network-Segmentation.png" alt="Network Segmentation" /></p>
+
+<p>Network segmentation is a cybersecurity strategy that involves dividing a computer network into smaller, isolated segments or subnetworks to enhance security, manage traffic, and control access. The primary goal of network segmentation is to reduce the attack surface and prevent lateral movement by attackers within a network. This approach limits the potential impact of a security breach by compartmentalizing the network and implementing security controls at various levels.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<h3 id="enhanced-security">Enhanced Security</h3>
+
+<ul>
+  <li><strong>Reduced Attack Surface:</strong> Segmentation limits the exposure of critical assets to potential attackers. Even if one segment is compromised, it doesn’t automatically grant access to other segments.</li>
+  <li><strong>Isolation of Threats:</strong> In the event of a security breach, network segmentation confines the breach to a specific segment, preventing it from spreading throughout the entire network.</li>
+</ul>
+
+<h3 id="access-control">Access Control</h3>
+
+<ul>
+  <li><strong>Granular Access Control:</strong> Network segments can have specific access controls and policies tailored to the needs of the users and devices within them. This ensures that only authorized users and systems can access resources.</li>
+</ul>
+
+<h3 id="regulatory-compliance">Regulatory Compliance</h3>
+
+<ul>
+  <li><strong>Compliance with Regulations:</strong> Network segmentation can help organizations meet regulatory and compliance requirements, especially when dealing with sensitive or personal data.</li>
+</ul>
+
+<h3 id="improved-network-performance">Improved Network Performance</h3>
+
+<ul>
+  <li><strong>Optimized Traffic Management:</strong> Segmentation allows for better traffic management and resource allocation, which can lead to improved network performance and reduced congestion.</li>
+</ul>
+
+<h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
+
+<ul>
+  <li><strong>Define Segmentation Goals:</strong> Clearly define the objectives of network segmentation, including improved security, access control, and compliance.</li>
+  <li><strong>Network Inventory:</strong> Document all devices, systems, and resources in your network. Identify critical assets and data that require segmentation.</li>
+</ul>
+
+<h1 id="segmentation-strategy">Segmentation Strategy</h1>
+
+<p>Develop a segmentation strategy based on your organization’s specific needs. Decide on the segmentation approach, such as VLANs, subnets, or micro-segmentation.</p>
+
+<h2 id="access-control-policies">Access Control Policies</h2>
+
+<p>Create access control policies that specify who can access which resources within each segment. Define user roles and responsibilities.</p>
+
+<h2 id="network-design">Network Design</h2>
+
+<p>Design the network architecture to implement the segmentation strategy. Consider how data will flow between segments and how traffic will be routed.</p>
+
+<h2 id="firewall-rules">Firewall Rules</h2>
+
+<p>Configure firewall rules to enforce access policies and control traffic between segments. Ensure that firewalls are placed at appropriate network boundaries.</p>
+
+<h2 id="vlan-configuration">VLAN Configuration</h2>
+
+<p>If using VLANs, configure switches and routers to support virtual LANs. Ensure that devices are correctly assigned to their respective VLANs.</p>
+
+<h2 id="subnetting">Subnetting</h2>
+
+<p>Divide the IP address space into subnets to create network segments. Configure routers and switches accordingly.</p>
+
+<h2 id="micro-segmentation-tools">Micro-Segmentation Tools</h2>
+
+<p>If implementing micro-segmentation, select and deploy appropriate tools and solutions that enable fine-grained control over network traffic.</p>
+
+<h2 id="access-control-lists-acls">Access Control Lists (ACLs)</h2>
+
+<p>Use ACLs to control traffic at the network layer. Define and apply ACLs to routers and switches to restrict traffic between segments.</p>
+
+
+    </div>
+    <!-- _includes/footer.md -->
+
+<style>
+  .footer {
+    padding-top: 40px;
+    background-color: lightblue; /* Light background color */
+    padding: 20px 0; /* Padding around footer content */
+    text-align: center; /* Center align footer content */
+    font-size: 14px; /* Set font size */
+    color: #333; /* Text color */
+  }
+</style>
+
+<div class="footer">
+  <p>Copyright &copy; 2024 Company. All rights reserved.</p>
+  <p>Contact: info@company.com | Phone: 123-456-7890</p>
+  <p>Follow us on <a href="https://twitter.com/yourcompany">Twitter</a> | <a href="https://www.facebook.com/yourcompany">Facebook</a></p>
+</div>
+
+</body>
+</html>

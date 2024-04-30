@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulkhead</title>
+</head>
+<style>
+    /* body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+  ul {
+    padding-left: 20px;
+    color: #555;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
+  body {
+  font-family: Arial, sans-serif;
+  }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+ul {
+  padding-left: 20px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.container .benefits {
+    /* background-color: #f9f9f9; */
+    /* background-color: aqua; */
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    /* background-color: #f9f9f9; */
+    background-color: aqua;
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } 
+
+</style>
+
+<body>
+    <!-- _includes/navbar.md -->
+
+<style>
+  .navbar {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: center; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  .navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from navbar links */
+    padding: 10px 20px; /* Padding around navbar links */
+    margin: 0 5px; /* Add margin to navbar links */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    position: relative; /* Positioning context for the line */
+    font-size: 14.5px;
+  }
+  .navbar1 {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: left; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  .navbar a:not(:last-child):after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position the line absolutely */
+    top: 50%; /* Align the line vertically */
+    right: 0; /* Position the line to the right */
+    transform: translateY(-50%); /* Center the line vertically */
+    width: 1px; /* Line width */
+    height: 80%; /* Line height */
+    background-color: #fff; /* Line color */
+  }
+
+  .navbar a:hover {
+    background-color: #2980b9; /* Background color on hover */
+  }
+</style>
+
+<div class="navbar">
+<div class="navbar1">
+<a href="/">&nbsp;&nbsp;Home</a>
+</div>
+  <div>
+  <a href="/architectural-styles">Architectural Styles</a>
+  <a href="/cloud-native-attributes">Cloud Native Attributes</a>
+  <a href="/design-principles">Design Principles</a>
+  <a href="/design-patterns">Design Patterns</a>
+  <a href="/security-design-patterns">Security Patterns</a>
+  <a href="/architectural-patterns">Architectural Patterns</a>
+  </div>
+</div>
+
+    <div class="container">
+        <p><img src="./../../pictures/bulkhead.png" alt="Bulkhead" /></p>
+
+<p>The Bulkhead Pattern is a design pattern used in software development to isolate and contain failures, preventing them from affecting the entire system. This pattern draws inspiration from ship construction, where watertight compartments (bulkheads) are used to prevent a breach in one part of the ship from sinking the entire vessel. By compartmentalizing different parts of the system, you can significantly enhance its resilience and maintain operational continuity, even in the presence of failures.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<ul>
+  <li>
+    <p><strong>Increased Resilience:</strong><br />
+The pattern enhances the overall resilience of the system by preventing failures in one part from cascading and bringing down the entire system.</p>
+  </li>
+  <li>
+    <p><strong>Improved Availability:</strong><br />
+By isolating failures, the pattern ensures that other compartments can continue to function, maintaining overall system availability.</p>
+  </li>
+  <li>
+    <p><strong>Resource Management:</strong><br />
+Allocating separate resources to different compartments helps prevent resource contention and guarantees that failures in one compartment don’t lead to resource exhaustion for others.</p>
+  </li>
+  <li>
+    <p><strong>Better Security:</strong><br />
+The pattern can contribute to better security by limiting the attack surface for potential breaches or vulnerabilities.</p>
+  </li>
+</ul>
+
+<h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
+
+<ol>
+  <li>
+    <p><strong>Identify Components for Isolation:</strong><br />
+Identify the different components, services, or modules within your application that can be isolated to prevent failures from spreading. These could be components that have potential failure points or that perform critical functions.</p>
+  </li>
+  <li>
+    <p><strong>Implement Isolation Mechanisms:</strong><br />
+Implement mechanisms to isolate the identified components. This could involve using separate threads, processes, or even microservices to ensure that failures in one component do not impact others.</p>
+  </li>
+  <li>
+    <p><strong>Allocate Resources and Define Boundaries:</strong><br />
+Allocate appropriate resources (such as threads, memory, or computing power) to each isolated component. Clearly define the boundaries and responsibilities of each compartment to prevent resource contention and ensure that one component’s failures do not exhaust resources needed by others.</p>
+  </li>
+</ol>
+
+    </div>
+    <!-- _includes/footer.md -->
+
+<style>
+  .footer {
+    padding-top: 40px;
+    background-color: lightblue; /* Light background color */
+    padding: 20px 0; /* Padding around footer content */
+    text-align: center; /* Center align footer content */
+    font-size: 14px; /* Set font size */
+    color: #333; /* Text color */
+  }
+</style>
+
+<div class="footer">
+  <p>Copyright &copy; 2024 Company. All rights reserved.</p>
+  <p>Contact: info@company.com | Phone: 123-456-7890</p>
+  <p>Follow us on <a href="https://twitter.com/yourcompany">Twitter</a> | <a href="https://www.facebook.com/yourcompany">Facebook</a></p>
+</div>
+
+</body>
+</html>

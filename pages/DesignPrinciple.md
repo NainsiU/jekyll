@@ -1,42 +1,21 @@
 ---
 layout: default
-title: Design Principles
+title: Design Principle
 permalink: /design-principles
 ---
 
-
-
 <style>
   .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding-bottom: 50px;
+    align-items: center; /* Align items vertically */
   }
 
   .button {
-    margin: 10px;
     text-align: center;
-    border: 4px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  .button img {
-    width: 150px; /* Adjust as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .button a {
-    text-decoration: none;
-  }
-  
-  .button h3 {
-    margin-top: 10px;
-    color: dark blue;
-     
   }
 
   .box {
@@ -46,51 +25,101 @@ permalink: /design-principles
     width: 200px; /* Adjust as needed */
     text-align: center;
   }
-   h1 {
-      font-size: 36px; /* Increase font size */
-      text-align: left; /* Center align the text */
-      margin-top: 40px; /* Add some top margin */
-    }
+
+  .button img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .button h3 {
+    margin-top: 10px;
+  }
+
+  .button a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 36px; /* Increase font size */
+    text-align: left; /* Center align the text */
+    margin-top: 40px; /* Add some top margin */
+  }
 </style>
 
-<!-- <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design Principles</h1> -->
 <div class="button-container">
   <div class="button">
     <div class="box">
-      <a href="/architectural-styles/monolith/">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
-        <h3>Clean code</h3>
-      </a>
-    </div>
-  </div>
-    <div class="button">
-    <div class="box">
-      <a href="/architectural-styles/client-server">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+      <a href="/design-principles/composable">
+        <img src="./../pictures/composable.png" alt="Composable">
         <h3>Composable</h3>
-        &nbsp;  
       </a>
     </div>
   </div>
-    <div class="button">
+  <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+      <a href="/design-principles/DRY">
+        <img src="./../pictures/DRY.png" alt="DRY">
         <h3>DRY(Don't Repeat Yourself)</h3>
       </a>
     </div>
   </div>
-
   <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+      <a href="/design-principles/KISS">
+        <img src="./../pictures/kiss.png" alt="KISS">
         <h3>KISS(Keep It Simple, Stupid)</h3>
-        &nbsp;
       </a>
     </div>
   </div>
-
+  <div class="button">
+    <div class="box">
+      <a href="/design-principles/hollywood">
+        <img src="./../pictures/hollywoodicon.png" alt="Hollywood">
+        <h3>HOLLYWOOD</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-principles/YAGNI">
+        <img src="./../pictures/yagniicon.png" alt="YAGNI">
+        <h3>YAGNI</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-principles/SOLID">
+        <img src="./../pictures/solidicon.png" alt="SOLID">
+        <h3>SOLID</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-principles/green-coding-principles">
+        <img src="./../pictures/greencodingicon.png" alt="Green Coding Principles">
+        <h3>GREEN CODING</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-principles/green-coding">
+        <img src="./../pictures/green3.png" alt="Green Coding (3 Pillars and Benefits)">
+        <h3>Green Coding (3 Pillars and Benefits)</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-principles/green-coding-tangible">
+        <img src="./../pictures/greentabgible.png" alt="Green Coding (Tangible Things to Do)">
+        <h3>GREEN CODING(TANGIBLE THINGS TO DO)</h3>
+      </a>
+    </div>
+  </div>
   <!-- Add more buttons similarly -->
 </div>
-

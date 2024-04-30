@@ -4,25 +4,20 @@ title: Design Patterns
 permalink: /design-patterns
 ---
 
-
-
 <style>
   .button-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     align-items: center;
-     padding-bottom: 50px;
+    gap: 20px;
   }
 
   .button a {
     text-decoration: none;
   }
   .button {
-    margin: 10px;
     text-align: center;
-    border: 4px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
   }
 
   .button img {
@@ -43,51 +38,87 @@ permalink: /design-patterns
     width: 200px; /* Adjust as needed */
     text-align: center;
   }
-   h1 {
-      font-size: 36px; /* Increase font size */
-      text-align: left; /* Center align the text */
-      margin-top: 40px; /* Add some top margin */
-    }
 </style>
 
-<!-- <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design patterns</h1> -->
 <div class="button-container">
   <div class="button">
     <div class="box">
-      <a href="/architectural-styles/monolith/">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+      <a href="/design-pattern/rate-limitor">
+        <img src="../pictures/rate-limitor-icon.png" alt="Rate Limiter">
         <h3>Rate Limiter</h3>
       </a>
     </div>
   </div>
-    <div class="button">
+  <div class="button">
     <div class="box">
-      <a href="/architectural-styles/client-server">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+      <a href="/design-patterns/observer">
+        <img src="../pictures/observericon.png" alt="Observer">
         <h3>Observer</h3>
-        &nbsp;
-        
       </a>
     </div>
   </div>
-    <div class="button">
+  <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+      <a href="/design-patterns/circuit-breaker">
+        <img src="../pictures/circuit-breakericon.png" alt="Circuit Breaker">
         <h3>Circuit Breaker</h3>
       </a>
     </div>
   </div>
-
   <div class="button">
     <div class="box">
-      <a href="/page1.html">
-        <img src="/pictures/monolithicarchitecture.jpg" alt="Picture 1">
+      <a href="/design-patterns/retry">
+        <img src="../pictures/retryicon.png" alt="Retry">
         <h3>Retry</h3>
-        &nbsp;
       </a>
     </div>
   </div>
-
-  <!-- Add more buttons similarly -->
+  <div class="button">
+    <div class="box">
+      <a href="/design-patterns/ambassador">
+        <img src="../pictures/ambassadoricon.png" alt="Ambassador">
+        <h3>Ambassador</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-patterns/bulkhead">
+        <img src="../pictures/bulkheadicon.png" alt="Bulkhead">
+        <h3>Bulkhead</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href=" /design-pattern/load-balancer">
+        <img src="../pictures/loadbalancericon.png" alt="Load Balancer">
+        <h3>Load Balancer</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-patterns/queue-based-load-leveling">
+        <img src="../pictures/queue-basedicon.png" alt="Queue Based Load Leveling">
+        <h3>Queue Based Load Leveling</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-patterns/sidecar-pattern">
+        <img src="../pictures/sidecaricon.png" alt="Sidecar">
+        <h3>Sidecar</h3>
+      </a>
+    </div>
+  </div>
+  <div class="button">
+    <div class="box">
+      <a href="/design-patterns/throttling">
+        <img src="../pictures/throttlingicon.png" alt="Throttling">
+        <h3>Throttling</h3>
+      </a>
+    </div>
+  </div>
 </div>

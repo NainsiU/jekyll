@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circuit Breaker</title>
+</head>
+<style>
+    /* body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.6;
+    color: #555;
+  }
+
+  ul {
+    padding-left: 20px;
+    color: #555;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
+  body {
+  font-family: Arial, sans-serif;
+  }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+ul {
+  padding-left: 20px;
+  color: #555;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.container .benefits {
+    /* background-color: #f9f9f9; */
+    /* background-color: aqua; */
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .how-to-adopt {
+    /* background-color: #f9f9f9; */
+    background-color: aqua;
+    color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } 
+
+</style>
+
+<body>
+    <!-- _includes/navbar.md -->
+
+<style>
+  .navbar {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: center; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  .navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from navbar links */
+    padding: 10px 20px; /* Padding around navbar links */
+    margin: 0 5px; /* Add margin to navbar links */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    position: relative; /* Positioning context for the line */
+    font-size: 14.5px;
+  }
+  .navbar1 {
+    background-color: #3498db; /* Background color */
+    padding: 15px 0; /* Padding around navbar links */
+    text-align: left; /* Center align navbar links */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+
+  .navbar a:not(:last-child):after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position the line absolutely */
+    top: 50%; /* Align the line vertically */
+    right: 0; /* Position the line to the right */
+    transform: translateY(-50%); /* Center the line vertically */
+    width: 1px; /* Line width */
+    height: 80%; /* Line height */
+    background-color: #fff; /* Line color */
+  }
+
+  .navbar a:hover {
+    background-color: #2980b9; /* Background color on hover */
+  }
+</style>
+
+<div class="navbar">
+<div class="navbar1">
+<a href="/">&nbsp;&nbsp;Home</a>
+</div>
+  <div>
+  <a href="/architectural-styles">Architectural Styles</a>
+  <a href="/cloud-native-attributes">Cloud Native Attributes</a>
+  <a href="/design-principles">Design Principles</a>
+  <a href="/design-patterns">Design Patterns</a>
+  <a href="/security-design-patterns">Security Patterns</a>
+  <a href="/architectural-patterns">Architectural Patterns</a>
+  </div>
+</div>
+
+    <div class="container">
+        <p><img src="./../../pictures/circuit-breaker.png" alt="Circuit Breaker" /></p>
+
+<p>The Circuit Breaker pattern enhances the stability and resilience of systems that communicate with external services or resources, such as APIs, databases, or web services. It prevents cascading failures and provides a fallback mechanism in case the external service becomes unavailable or exhibits poor performance.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<ul>
+  <li>
+    <p><strong>Fault Isolation:</strong><br />
+The pattern prevents failures in one part of the system from propagating to other parts by isolating the problematic service, limiting the impact on the overall system.</p>
+  </li>
+  <li>
+    <p><strong>Improved User Experience:</strong><br />
+By quickly failing requests to a troubled external service, the pattern ensures that users are not left waiting for unresponsive services, improving the overall user experience.</p>
+  </li>
+  <li>
+    <p><strong>Resilience:</strong><br />
+The Circuit Breaker pattern helps the system remain operational even when external services experience intermittent issues, ensuring graceful degradation rather than complete failure.</p>
+  </li>
+  <li>
+    <p><strong>Fallback Strategies:</strong><br />
+Implement fallback strategies, such as using cached data or alternative services, to maintain at least partial functionality during service outages.</p>
+  </li>
+</ul>
+
+<h2 id="tangible-things-to-do-for-adoption">Tangible Things to Do for Adoption</h2>
+
+<ol>
+  <li>
+    <p><strong>Choose a Circuit Breaker Library or Implement Logic:</strong><br />
+Decide whether to use an existing circuit breaker library provided by your programming language or framework (if available) or implement the circuit breaker logic manually. Follow documentation to integrate it into your application.</p>
+  </li>
+  <li>
+    <p><strong>Set Thresholds and Timeouts:</strong><br />
+Determine thresholds for errors, response times, or other metrics triggering the circuit breaker to transition from closed to open states. Set timeouts for how long the circuit breaker should remain open or how many requests it should allow during the half-open state.</p>
+  </li>
+  <li>
+    <p><strong>Integrate with External Services:</strong><br />
+Identify external services or resources your application communicates with. Implement circuit breaker logic around these interactions. Wrap requests to external services with the circuit breaker logic. If the service’s response indicates failure or exceeds defined thresholds, trip the circuit breaker.</p>
+  </li>
+</ol>
+
+
+    </div>
+    <!-- _includes/footer.md -->
+
+<style>
+  .footer {
+    padding-top: 40px;
+    background-color: lightblue; /* Light background color */
+    padding: 20px 0; /* Padding around footer content */
+    text-align: center; /* Center align footer content */
+    font-size: 14px; /* Set font size */
+    color: #333; /* Text color */
+  }
+</style>
+
+<div class="footer">
+  <p>Copyright &copy; 2024 Company. All rights reserved.</p>
+  <p>Contact: info@company.com | Phone: 123-456-7890</p>
+  <p>Follow us on <a href="https://twitter.com/yourcompany">Twitter</a> | <a href="https://www.facebook.com/yourcompany">Facebook</a></p>
+</div>
+
+</body>
+</html>

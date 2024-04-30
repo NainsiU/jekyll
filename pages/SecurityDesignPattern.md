@@ -57,7 +57,7 @@ permalink: /security-design-patterns
   <div class="button">
     <div class="box">
       <a href="/security-design-pattern/security-by-design-cloud">
-        <img src="./../pictures/security-by-design-icon.png" alt="Security By Design">
+        <img src="./pictures/security-by-design-icon.png" alt="Security By Design">
         <h3>Security By Design</h3>
       </a>
     </div>
@@ -65,7 +65,7 @@ permalink: /security-design-patterns
   <div class="button">
     <div class="box">
       <a href="/security-design-pattern/federated-identity">
-        <img src="./../pictures/Federated-Identity-icon.png" alt="Federated Identity">
+        <img src="./pictures/Federated-Identity-icon.png" alt="Federated Identity">
         <h3>Federated Identity</h3>
       </a>
     </div>
@@ -73,7 +73,7 @@ permalink: /security-design-patterns
   <div class="button">
     <div class="box">
       <a href="/security-design-pattren/gatekeeper">
-        <img src="./../pictures/Gatekeeper-icon.png" alt="GateKeeper">
+        <img src="./pictures/Gatekeeper-icon.png" alt="GateKeeper">
         <h3>GateKeeper</h3>
       </a>
     </div>
@@ -81,7 +81,7 @@ permalink: /security-design-patterns
   <div class="button">
     <div class="box">
       <a href="/security-design-pattern/valet-key">
-        <img src="./../pictures/Valet-Key.png" alt="Valet Key">
+        <img src="./pictures/Valet-Key.png" alt="Valet Key">
         <h3>Valet Key</h3>
       </a>
     </div>
@@ -89,7 +89,7 @@ permalink: /security-design-patterns
   <div class="button">
     <div class="box">
       <a href="/security-design-pattern/zero-trust-model">
-        <img src="./../pictures/zero-trust-icon.png" alt="Zero Trust Model">
+        <img src="./pictures/zero-trust-icon.png" alt="Zero Trust Model">
         <h3>Zero Trust Model</h3>
       </a>
     </div>
@@ -97,7 +97,7 @@ permalink: /security-design-patterns
   <div class="button">
     <div class="box">
       <a href="/security-design-pattern/network-segmentation">
-        <img src="./../pictures/Network-Segmentation-icon.png" alt="Network Segmentation">
+        <img src="./pictures/Network-Segmentation-icon.png" alt="Network Segmentation">
         <h3>Network Segmentation</h3>
       </a>
     </div>

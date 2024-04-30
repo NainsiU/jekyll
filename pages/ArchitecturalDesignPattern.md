@@ -53,7 +53,7 @@ permalink: /architectural-patterns
   <div class="button">
     <div class="box">
       <a href="/architectural-pattern/model-view-controller">
-        <img src="../pictures/mvcicon.png" alt="MVC">
+        <img src="./pictures/mvcicon.png" alt="MVC">
         <h3>Model View Controller(MVC)</h3>
       </a>
     </div>
@@ -61,7 +61,7 @@ permalink: /architectural-patterns
     <div class="button">
     <div class="box">
       <a href="/architectural-pattern/domain-driven-design">
-        <img src="../pictures/dddicon.png" alt="DDD">
+        <img src="./pictures/dddicon.png" alt="DDD">
         <h3>Domain Driven Design(DDD)</h3>
         &nbsp;
         </a>
@@ -70,7 +70,7 @@ permalink: /architectural-patterns
     <div class="button">
     <div class="box">
       <a href="/architectural-pattern/hexagonal-architecture">
-        <img src="../pictures/hexaicon.png" alt="Hexagonal">
+        <img src="./pictures/hexaicon.png" alt="Hexagonal">
         <h3>Hexagonal</h3>
       </a>
     </div>
@@ -79,7 +79,7 @@ permalink: /architectural-patterns
   <div class="button">
     <div class="box">
       <a href="/architectural-pattern/mvp">
-        <img src="../pictures/mvpicon.png" alt="MVP">
+        <img src="./pictures/mvpicon.png" alt="MVP">
         <h3>MVP (Model View Presenter)</h3>
         &nbsp;
       </a>
@@ -89,7 +89,7 @@ permalink: /architectural-patterns
   <div class="button">
     <div class="box">
       <a href="/architectural-pattern/static-content-hosting">
-        <img src="../pictures/SCH.png" alt="SCH">
+        <img src="./pictures/SCH.png" alt="SCH">
         <h3>Static Content Hosting</h3>
         &nbsp;
       </a>
@@ -99,7 +99,7 @@ permalink: /architectural-patterns
  <div class="button">
     <div class="box">
       <a href="/architectural-patterns/backend-for-frontend">
-        <img src="../pictures/bfficon.png" alt="SCH">
+        <img src="./pictures/bfficon.png" alt="SCH">
         <h3>Backend For Frontend(BFF)</h3>
         &nbsp;
       </a>

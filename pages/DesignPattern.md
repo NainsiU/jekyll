@@ -44,7 +44,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-pattern/rate-limitor">
-        <img src="../pictures/rate-limitor-icon.png" alt="Rate Limiter">
+        <img src="./pictures/rate-limitor-icon.png" alt="Rate Limiter">
         <h3>Rate Limiter</h3>
       </a>
     </div>
@@ -52,7 +52,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/observer">
-        <img src="../pictures/observericon.png" alt="Observer">
+        <img src="./pictures/observericon.png" alt="Observer">
         <h3>Observer</h3>
       </a>
     </div>
@@ -60,7 +60,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/circuit-breaker">
-        <img src="../pictures/circuit-breakericon.png" alt="Circuit Breaker">
+        <img src="./pictures/circuit-breakericon.png" alt="Circuit Breaker">
         <h3>Circuit Breaker</h3>
       </a>
     </div>
@@ -68,7 +68,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/retry">
-        <img src="../pictures/retryicon.png" alt="Retry">
+        <img src="./pictures/retryicon.png" alt="Retry">
         <h3>Retry</h3>
       </a>
     </div>
@@ -76,7 +76,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/ambassador">
-        <img src="../pictures/ambassadoricon.png" alt="Ambassador">
+        <img src="./pictures/ambassadoricon.png" alt="Ambassador">
         <h3>Ambassador</h3>
       </a>
     </div>
@@ -84,7 +84,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/bulkhead">
-        <img src="../pictures/bulkheadicon.png" alt="Bulkhead">
+        <img src="./pictures/bulkheadicon.png" alt="Bulkhead">
         <h3>Bulkhead</h3>
       </a>
     </div>
@@ -92,7 +92,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href=" /design-pattern/load-balancer">
-        <img src="../pictures/loadbalancericon.png" alt="Load Balancer">
+        <img src="./pictures/loadbalancericon.png" alt="Load Balancer">
         <h3>Load Balancer</h3>
       </a>
     </div>
@@ -100,7 +100,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/queue-based-load-leveling">
-        <img src="../pictures/queue-basedicon.png" alt="Queue Based Load Leveling">
+        <img src="./pictures/queue-basedicon.png" alt="Queue Based Load Leveling">
         <h3>Queue Based Load Leveling</h3>
       </a>
     </div>
@@ -108,7 +108,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/sidecar-pattern">
-        <img src="../pictures/sidecaricon.png" alt="Sidecar">
+        <img src="./pictures/sidecaricon.png" alt="Sidecar">
         <h3>Sidecar</h3>
       </a>
     </div>
@@ -116,7 +116,7 @@ permalink: /design-patterns
   <div class="button">
     <div class="box">
       <a href="/design-patterns/throttling">
-        <img src="../pictures/throttlingicon.png" alt="Throttling">
+        <img src="./pictures/throttlingicon.png" alt="Throttling">
         <h3>Throttling</h3>
       </a>
     </div>

@@ -4,7 +4,7 @@ permalink: /security-design-pattern/security-by-design-cloud
 layout: pagelayout
 ---
 
-![Security by Design](../../pictures/security-by-design.png)
+![Security by Design](./pictures/security-by-design.png)
 
 Security by Design refers to a proactive approach to designing and implementing cloud-based systems and applications with security as a fundamental and integral part of the design process. This approach emphasizes the incorporation of security measures and best practices from the very beginning of the cloud solution's development, rather than treating security as an afterthought.
 
